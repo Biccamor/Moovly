@@ -372,8 +372,6 @@ async def trigger_recommendations(
 
         recommendations = await RecomService.get_recommendations_from_db(db_room_session, session)
 
-        # 3. Zapisz wyniki w sesji filmowej
-        # recommendations może być dict lub list — normalizujemy do list
         if isinstance(recommendations, dict):
             rec_data = recommendations.get("recommendations", [recommendations])
         elif isinstance(recommendations, list):
@@ -381,7 +379,19 @@ async def trigger_recommendations(
         else:
             rec_data = [recommendations] if recommendations else []
 
-        movie_session.recommendations = rec_data
+        rec_data_dicts = []
+        for r in rec_data:
+            if hasattr(r, "model_dump"):
+                # Konwertujemy Pydantic do słownika
+                # model_dump(mode='json') konwertuje też UUID i daty na stringi, 
+                # co zapobiega kolejnym błędom serializacji JSONB.
+                rec_data_dicts.append(r.model_dump(mode='json'))
+            elif hasattr(r, "dict"):
+                rec_data_dicts.append(r.dict())
+            else:
+                rec_data_dicts.append(r)
+
+        movie_session.recommendations = rec_data_dicts
         movie_session.room_session_id = room_session_id
         movie_session.status = "COMPLETED"
 
