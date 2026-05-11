@@ -85,21 +85,59 @@ async def decide(session, query, runtime: int, llm_prompt: str, reranker_query: 
     Output:
     """
 
-    response = await client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[
-            {"role": "system", "content": AGENT_SYSTEM_PROMPT},
-            {"role": "user",   "content": user_prompt},
-        ],
-        temperature=0.25,
-        top_p=0.9,
-        response_format={"type": "json_object"},
-    )
+    from fastapi import HTTPException
+    from openai import RateLimitError, AuthenticationError, APIConnectionError, APIStatusError
+    from pydantic import ValidationError
 
-    raw_content = response.choices[0].message.content or ""
-    llm_result = LlmOutput.model_validate_json(raw_content)
+    try:
+        response = await client.chat.completions.create(
+            model="llama-3.1-8b-instant",
+            messages=[
+                {"role": "system", "content": AGENT_SYSTEM_PROMPT},
+                {"role": "user",   "content": user_prompt},
+            ],
+            temperature=0.25,
+            top_p=0.9,
+            response_format={"type": "json_object"},
+        )
+        raw_content = response.choices[0].message.content or ""
+
+    except RateLimitError as e:
+        logger.warning(f"Groq rate limit: {e}")
+        raise HTTPException(
+            status_code=429,
+            detail="We have problem with limit of our AI provider. Try again later."
+        )
+    except AuthenticationError as e:
+        logger.error(f"Groq auth error: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail="We have problem with authentication of our AI provider. Try again later."
+        )
+    except APIConnectionError as e:
+        logger.error(f"Groq connection error: {e}")
+        raise HTTPException(
+            status_code=503,
+            detail="We have problem with connection to our AI provider. Try again later."
+        )
+    except APIStatusError as e:
+        logger.error(f"Groq API error {e.status_code}: {e.message}")
+        raise HTTPException(
+            status_code=502,
+            detail=f"We have problem with AI provider. Try again later."
+        )
+
+    try:
+        llm_result = LlmOutput.model_validate_json(raw_content)
+    except ValidationError as e:
+        logger.error(f"LLM zwrócił nieprawidłowy JSON: {raw_content[:300]}\nBłąd: {e}")
+        raise HTTPException(
+            status_code=500,
+            detail="AI zwróciło nieprawidłową odpowiedź — spróbuj ponownie."
+        )
+
     t4 = time.perf_counter()
-    logger.info(f"llm took {t4-t3}")
+    logger.info(f"llm took {t4-t3:.2f}s")
 
     # mapujemy dane z bazy (poster, rok, gatunki, czas trwania, ocena)
     matched = find_movie(llm_result.movie_title)

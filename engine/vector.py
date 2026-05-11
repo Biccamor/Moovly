@@ -1,5 +1,5 @@
 from database.database_setup import Movie
-from sqlmodel import select,cast,String
+from sqlmodel import select,cast,String,text    
 from flashrank import RerankRequest
 import scripts.dependencies as d
 import asyncio
@@ -32,26 +32,21 @@ async def reranker(prompt, top_movies: list, limit_movies:int = 25):
     reranked = [top_movies[r["id"]] for r in results[:limit_movies]] # bierzemy z top movies topowe filmy wedlug rerankera wiec jest tam poster_path etc
     return reranked
 
-async def hybrid_search(query_vector: list[float],max_runtime: int, session,  rating_weight: float = 0.15, limit_movies: int = 50) -> list:
+async def hybrid_search(query_vector: list[float], max_runtime: int, session, rating_weight: float = 0.15, limit_movies: int = 50) -> list:
     
 
-    rating_penalty = (10.0 -Movie.rating) / 10.0 
+    # HNSW ef_search — wyższy = dokładniejszy ale wolniejszy (default 40, max 1000)
+    session.exec(text("SET hnsw.ef_search = 100;"))  # type: ignore
+
+    rating_penalty = (10.0 - Movie.rating) / 10.0 
     # tym mniejszy hybrid_score tym lepiej, tym gorsza ocena tym dodatkowo "dalej" od idealnego filmu 0.0
-    # ANIMATION_TAX = 0.09
-    
-    # animation_penalty = case(
-    #     # Rzutujemy kolumnę na zwykły tekst i szukamy "%Animation%" wewnątrz
-    #     (cast(Movie.genre, String).ilike("%Animation%"), ANIMATION_TAX), 
-    #     else_=0.0
-    # )
 
     hybrid_score = (Movie.embedding.cosine_distance(query_vector) + (rating_weight * rating_penalty)).label("score") # type: ignore
-
 
     statement = (
         select(Movie, hybrid_score)
         .order_by(hybrid_score)
-        .where(Movie.runtime <= max_runtime) # type: ignore #TODO: wymysl co jezeli runtime to none
+        .where(Movie.runtime <= max_runtime) # type: ignore
         .limit(limit_movies)
     )
         
