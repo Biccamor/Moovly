@@ -1,0 +1,630 @@
+══════════════════════════════════════════════════════════════════════
+  movieNight — Wyniki scenariuszy testowych
+  Data:    2026-05-11 20:38:15
+  Backend: http://localhost:8010
+  Scenariuszy: 20
+══════════════════════════════════════════════════════════════════════
+
+======================================================================
+  REJESTRACJA I LOGOWANIE
+======================================================================
+  Email: scenario_runner_a57f8d47@test.pl
+  ✅ Rejestracja OK: {'message': 'Account created successfully', 'user_id': '66a9b07c-62e6-4e54-9240-2bfa9fc2f071'}
+  ✅ Login OK — user_id: 66a9b07c-62e6-4e54-9240-2bfa9fc2f071
+======================================================================
+
+
+──────────────────────────────────────────────────────────────────────
+  [ 1/20] solo_pizza_chill
+  Typ: SOLO  |  Userzy: Tomek
+  Opis: Jedna osoba, wieczór z pizzą, nic wymagającego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 4dc2d269-d758-4eab-94c8-18a7fc6a2729  (0.79s)
+  → POST /recommendation/4dc2d269-d758-4eab-94c8-18a7fc6a2729 ...
+  ✅ Rekomendacja OK  (3.47s)
+
+  🎬 GŁÓWNY FILM: Free Guy
+     Gatunki:     Comedy, Adventure, Science Fiction
+     Ocena:       7.453
+     Runtime:     115 min
+     Data:        2021-08-11
+     Poster:      https://image.tmdb.org/t/p/w500/dxraF0qPr1OEgJk17ltQTO84kQF.jpg
+
+  💭 THOUGHT:
+     Tomek wants Action, Adventure, Comedy movies that are casual, easy to watch, entertaining, feel-good, fun, lighthearted, and a popcorn movie, so I chose a movie that fits these vibes
+
+  📝 REASONING:
+     Free Guy is a great fit for Tomek's preferences as it's an action-packed, adventurous, and comedic movie that's easy to watch and entertaining. It's a feel-good film that's perfect for a solo meeting.
+
+  🎥 ALTERNATYWY:
+     1. The Professionals  (Western, Adventure, Action)  ⭐7.09  🕐117min
+     2. Onward  (Family, Comedy, Adventure, Animation, Fantasy)  ⭐7.641  🕐102min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 2/20] solo_ambitious_cinephile
+  Typ: SOLO  |  Userzy: Marta
+  Opis: Samotny kinofile szukający czegoś wymagającego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 51da5427-a8e4-4303-812b-782169869c1b  (0.38s)
+  → POST /recommendation/51da5427-a8e4-4303-812b-782169869c1b ...
+  ✅ Rekomendacja OK  (3.52s)
+
+  🎬 GŁÓWNY FILM: Gattaca
+     Gatunki:     Thriller, Science Fiction, Mystery, Romance
+     Ocena:       7.566
+     Runtime:     107 min
+     Data:        1997-07-09
+     Poster:      https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg
+
+  💭 THOUGHT:
+     Marta wants complex and thought-provoking movies, I've chosen a film that fits her preferences for drama, mystery, science fiction, and thriller genres.
+
+  📝 REASONING:
+     Gattaca is a thought-provoking and complex film that explores themes of genetics, identity, and humanity. Its intricate plot and philosophical undertones make it a great fit for Marta's preferences.
+
+  🎥 ALTERNATYWY:
+     1. Memento  (Mystery, Thriller)  ⭐8.176  🕐113min
+     2. Predestination  (Science Fiction, Thriller)  ⭐7.417  🕐98min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 3/20] solo_horror_night
+  Typ: SOLO  |  Userzy: Kasia
+  Opis: Samotna sesja horrorowa — krótki film
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 031064ce-40f1-42c4-8fc2-4e939a3612e1  (0.18s)
+  → POST /recommendation/031064ce-40f1-42c4-8fc2-4e939a3612e1 ...
+  ✅ Rekomendacja OK  (2.37s)
+
+  🎬 GŁÓWNY FILM: Presence
+     Gatunki:     Horror, Thriller, Drama
+     Ocena:       6.127
+     Runtime:     84 min
+     Data:        2025-01-17
+     Poster:      https://image.tmdb.org/t/p/w500/xZIGHoHj0DF0zdibwa66cRWHdHO.jpg
+
+  💭 THOUGHT:
+     Kasia wants Horror, Mystery, Thriller movies with dark atmosphere, demon, ghost story, jump scares, macabre, pure HORROR, scary, sinister, supernatural horror, terrifying, perfect for a solo meeting
+
+  📝 REASONING:
+     Presence is a great fit for Kasia's preferences, with a haunted house, entity, death, and grief, creating a dark atmosphere. It also has elements of supernatural horror and terrifying moments, making it perfect for a solo meeting.
+
+  🎥 ALTERNATYWY:
+     1. Immaculate  (Horror, Mystery, Thriller)  ⭐6.209  🕐89min
+     2. The Devil's Bride  (Horror, Thriller)  ⭐6.0  🕐91min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 4/20] solo_nostalgia_trip
+  Typ: SOLO  |  Userzy: Piotr
+  Opis: Powrót do dzieciństwa — klasyki z lat 80/90
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: a327e38d-763f-4dcd-b635-a5e146d9a885  (0.33s)
+  → POST /recommendation/a327e38d-763f-4dcd-b635-a5e146d9a885 ...
+  ✅ Rekomendacja OK  (2.77s)
+
+  🎬 GŁÓWNY FILM: Shrek
+     Gatunki:     Adventure, Comedy, Animation, Fantasy
+     Ocena:       None
+     Runtime:     None min
+     Data:        None
+     Poster:      
+
+  💭 THOUGHT:
+     Group wants Adventure, Family, Fantasy, Science Fiction movies with elements like 80s, 90s, childhood memories, chosen one, classic, coming of age, epic, grand scale, hero's journey, mythology, old movies, old school, quest, retro, sprawling, throwback, world-building, Shrek is the best fit
+
+  📝 REASONING:
+     Shrek is a classic adventure movie with a grand scale and a hero's journey, set in a fantasy world with a chosen one theme. It has elements of childhood memories and a retro feel, making it a great fit for the group's preferences.
+
+  🎥 ALTERNATYWY:
+     1. Star Wars  (Adventure, Action, Science Fiction)  ⭐8.2  🕐121min
+     2. The Magic Faraway Tree  (Family, Fantasy, Adventure)  ⭐8.5  🕐110min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 5/20] solo_no_preferences
+  Typ: SOLO  |  Userzy: Ghost
+  Opis: User nie podał żadnych vibes — system powinien dać coś domyślnego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: af8962d5-06e7-4b87-a128-c6ef45b1cf8c  (0.11s)
+  → POST /recommendation/af8962d5-06e7-4b87-a128-c6ef45b1cf8c ...
+  ✅ Rekomendacja OK  (2.21s)
+
+  🎬 GŁÓWNY FILM: Novocaine
+     Gatunki:     Action, Comedy, Thriller
+     Ocena:       6.795
+     Runtime:     110 min
+     Data:        2025-03-12
+     Poster:      https://image.tmdb.org/t/p/w500/xmMHGz9dVRaMY6rRAlEX4W0Wdhm.jpg
+
+  💭 THOUGHT:
+     Ghost wants all kinds of movies, so I've chosen a movie that's a mix of genres and has a unique plot.
+
+  📝 REASONING:
+     Novocaine is a dark comedy with action elements, making it a great fit for a group that wants all kinds of movies. The plot is unique and engaging, with a protagonist who turns his inability to feel pain into an unexpected strength.
+
+  🎥 ALTERNATYWY:
+     1. Spaceman  (Science Fiction, Adventure, Drama)  ⭐6.707  🕐108min
+     2. Cowboy Bebop: The Movie  (Action, Animation, Science Fiction)  ⭐7.7  🕐115min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 6/20] date_both_romantic
+  Typ: RANDKA  |  Userzy: Anna, Michał
+  Opis: Oboje chcą romantycznego wieczoru — harmonia
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 3a8f0dac-0a83-4b6c-ae59-cc449b38d580  (0.24s)
+  → POST /recommendation/3a8f0dac-0a83-4b6c-ae59-cc449b38d580 ...
+  ✅ Rekomendacja OK  (3.24s)
+
+  🎬 GŁÓWNY FILM: Four Weddings and a Funeral
+     Gatunki:     Comedy, Drama, Romance
+     Ocena:       6.773
+     Runtime:     117 min
+     Data:        1994-03-09
+     Poster:      https://image.tmdb.org/t/p/w500/qa72G2VS0bpxms6yo0tI9vsHm2e.jpg
+
+  💭 THOUGHT:
+     Group wants a mix of comedy, drama, and romance with elements of charming, chemistry, and emotional connections, I've chosen a movie that fits their preferences.
+
+  📝 REASONING:
+     Four Weddings and a Funeral is a classic romantic comedy that explores the complexities of relationships, love, and human connections. It has a charming and witty tone, making it perfect for a group looking for a mix of comedy, drama, and romance.
+
+  🎥 ALTERNATYWY:
+     1. Love Story  (Romance, Drama)  ⭐6.8  🕐100min
+     2. The Graduate  (Drama, Romance, Comedy)  ⭐7.633  🕐106min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 7/20] date_romance_vs_action
+  Typ: RANDKA  |  Userzy: Ola, Bartek
+  Opis: Ona chce romcom, on chce adrenaliny — KONFLIKT
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: deee9e6f-eb9c-4081-b702-529d0b1a5330  (0.44s)
+  → POST /recommendation/deee9e6f-eb9c-4081-b702-529d0b1a5330 ...
+  ✅ Rekomendacja OK  (3.44s)
+
+  🎬 GŁÓWNY FILM: Through My Window
+     Gatunki:     Romance, Drama, Comedy
+     Ocena:       7.352
+     Runtime:     112 min
+     Data:        2022-02-04
+     Poster:      https://image.tmdb.org/t/p/w500/jmkpZvMVIRrMFevxzOubSBfG0s0.jpg
+
+  💭 THOUGHT:
+     Group wants a mix of romance and drama for a RANDKA meeting, and I've chosen a romantic comedy that fits their preferences
+
+  📝 REASONING:
+     Through My Window is a romantic comedy that fits the group's preferences for a love story, moving, and heartbreaking. It also has elements of drama and romance, making it a great fit for a RANDKA meeting.
+
+  🎥 ALTERNATYWY:
+     1. The Man from Nowhere  (Action, Thriller, Crime)  ⭐7.692  🕐119min
+     2. Gattaca  (Thriller, Science Fiction, Mystery, Romance)  ⭐7.566  🕐107min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 8/20] date_guilty_pleasure_harmony
+  Typ: RANDKA  |  Userzy: Zuzia, Dawid
+  Opis: Oboje lubią 'cringe' kino — idealna para
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: c4c929a3-dd24-4f72-851b-021c53ee87d6  (0.46s)
+  → POST /recommendation/c4c929a3-dd24-4f72-851b-021c53ee87d6 ...
+  ✅ Rekomendacja OK  (3.0s)
+
+  🎬 GŁÓWNY FILM: Scary Movie
+     Gatunki:     Comedy
+     Ocena:       6.386
+     Runtime:     88 min
+     Data:        2000-07-07
+     Poster:      https://image.tmdb.org/t/p/w500/fVQFPRuw3yWXojYDJvA5EoFjUOY.jpg
+
+  💭 THOUGHT:
+     Group wants campy, cheesy, cult classic, funny, hilarious, jokes, laugh out loud, over-the-top, predictable but fun, pure comedy, satire, slapstick, so bad it's good, spoof, teen drama movies, Scary Movie fits perfectly
+
+  📝 REASONING:
+     Scary Movie is a classic horror spoof that fits perfectly with the group's preferences for campy, cheesy, and cult classic elements. It's a hilarious and over-the-top comedy that will surely provide plenty of laughs.
+
+  🎥 ALTERNATYWY:
+     1. Ballerina  (Action, Thriller)  ⭐7.0  🕐93min
+     2. Ready or Not  (Horror, Comedy)  ⭐7.0  🕐95min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 9/20] date_horror_romance_mix
+  Typ: RANDKA  |  Userzy: Igor, Lena
+  Opis: On chce horroru, ona romansu — system musi znaleźć kompromis
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: bfc719ee-93bc-4121-a50e-9b79c7b18f5d  (0.3s)
+  → POST /recommendation/bfc719ee-93bc-4121-a50e-9b79c7b18f5d ...
+  ✅ Rekomendacja OK  (2.95s)
+
+  🎬 GŁÓWNY FILM: Rashomon
+     Gatunki:     Crime, Drama, Mystery
+     Ocena:       8.045
+     Runtime:     88 min
+     Data:        1950-08-26
+     Poster:      https://image.tmdb.org/t/p/w500/vL7Xw04nFMHwnvXRFCmYYAzMUvY.jpg
+
+  💭 THOUGHT:
+     Group wants Horror and Mystery movies, Rashomon is the best fit
+
+  📝 REASONING:
+     Rashomon is a classic mystery film with elements of horror and dark atmosphere, fitting the group's preferences. It explores the subjectivity of truth and features a court case with multiple perspectives, which aligns with Igor's interest in mystery.
+
+  🎥 ALTERNATYWY:
+     1. The Rocky Horror Picture Show  (Comedy, Science Fiction, Fantasy, Horror)  ⭐7.44  🕐99min
+     2. Whiplash  (Drama, Music, Thriller)  ⭐8.374  🕐107min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [10/20] crew_2_identical_vibes
+  Typ: EKIPA  |  Userzy: Kamil, Łukasz
+  Opis: Dwóch kumpli — obaj chcą tego samego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: dfb7ec2d-55cd-462f-9693-57d14c3a40ce  (0.37s)
+  → POST /recommendation/dfb7ec2d-55cd-462f-9693-57d14c3a40ce ...
+  ✅ Rekomendacja OK  (2.43s)
+
+  🎬 GŁÓWNY FILM: Kung Fu Hustle
+     Gatunki:     Action, Comedy, Crime, Fantasy
+     Ocena:       7.486
+     Runtime:     99 min
+     Data:        2004-02-10
+     Poster:      https://image.tmdb.org/t/p/w500/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg
+
+  💭 THOUGHT:
+     Both users want action-packed movies with a casual tone, I've chosen a movie that fits their preferences.
+
+  📝 REASONING:
+     Kung Fu Hustle is a lighthearted, entertaining, and action-packed movie with martial arts, gangsters, and a feel-good tone. It's a perfect fit for a casual EKIPA meeting.
+
+  🎥 ALTERNATYWY:
+     1. Lethal Weapon  (Action, Thriller, Crime)  ⭐7.286  🕐110min
+     2. Police Story  (Action, Crime, Comedy)  ⭐7.522  🕐100min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [11/20] crew_3_diverse_conflict
+  Typ: EKIPA  |  Userzy: Adam, Ewa, Marek
+  Opis: Trzy totalnie różne osoby — horror, romcom, sci-fi
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 1a57c520-b22f-4b3f-ad54-51f903ee97da  (0.67s)
+  → POST /recommendation/1a57c520-b22f-4b3f-ad54-51f903ee97da ...
+  ✅ Rekomendacja OK  (3.59s)
+
+  🎬 GŁÓWNY FILM: Ring
+     Gatunki:     Horror, Thriller
+     Ocena:       7.1
+     Runtime:     96 min
+     Data:        1998-01-31
+     Poster:      https://image.tmdb.org/t/p/w500/1YINof6kN5yRdePEbcU5360ejoq.jpg
+
+  💭 THOUGHT:
+     EKIPA group preferences suggest a mix of genres, I've chosen a movie that combines elements of Horror and Mystery, while also fitting Marek's preferences for Adventure and Fantasy.
+
+  📝 REASONING:
+     Ring is a classic Horror movie with a dark atmosphere, a ghost story, and jump scares, fitting Adam's preferences. It also has elements of Mystery, making it a good fit for the group. Additionally, it has a complex timeline and a plot twist, which aligns with Marek's preferences for Adventure and Fantasy.
+
+  🎥 ALTERNATYWY:
+     1. Together  (Horror, Romance)  ⭐7.0  🕐102min
+     2. Chainsaw Man - The Movie: Reze Arc  (Animation, Action, Romance, Fantasy)  ⭐8.33  🕐99min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [12/20] crew_4_all_chill
+  Typ: EKIPA  |  Userzy: Szymon, Filip, Kuba, Daniel
+  Opis: Czterech ziomków, pizza, piwo, coś lekkiego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 402360b6-c226-4196-81a3-0043310ccdc6  (0.44s)
+  → POST /recommendation/402360b6-c226-4196-81a3-0043310ccdc6 ...
+  ✅ Rekomendacja OK  (3.22s)
+
+  🎬 GŁÓWNY FILM: A Goofy Movie
+     Gatunki:     Adventure, Comedy, Romance, Animation, Family
+     Ocena:       7.02
+     Runtime:     78 min
+     Data:        1995-04-05
+     Poster:      https://image.tmdb.org/t/p/w500/bycmMhO3iIoEDzP768sUjq2RV4T.jpg
+
+  💭 THOUGHT:
+     EKIPA meeting with a mix of preferences, I chose a movie that fits most of the users' preferences
+
+  📝 REASONING:
+     A Goofy Movie is a lighthearted, entertaining, and fun movie that fits most of the users' preferences. It has elements of action, adventure, comedy, and romance, making it a great fit for the EKIPA meeting.
+
+  🎥 ALTERNATYWY:
+     1. Nimona  (Animation, Family, Action, Adventure, Fantasy, Comedy)  ⭐7.9  🕐99min
+     2. Elemental  (Family, Fantasy, Comedy, Romance, Animation)  ⭐7.577  🕐102min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [13/20] crew_5_action_dominant
+  Typ: EKIPA  |  Userzy: Wojtek, Paweł, Tomasz, Jakub, Robert
+  Opis: 5 osób, większość chce akcję, jeden outlier
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 2e349a82-d766-4ec0-b494-f7eb6cb1baac  (0.67s)
+  → POST /recommendation/2e349a82-d766-4ec0-b494-f7eb6cb1baac ...
+  ✅ Rekomendacja OK  (3.65s)
+
+  🎬 GŁÓWNY FILM: The Man from Nowhere
+     Gatunki:     Action, Thriller, Crime
+     Ocena:       7.692
+     Runtime:     119 min
+     Data:        2010-08-04
+     Poster:      https://image.tmdb.org/t/p/w500/ld19CFIo27t41JXSGZdaPMUGTxh.jpg
+
+  💭 THOUGHT:
+     EKIPA group wants high-octane action and thrilling movies, The Man from Nowhere is the best fit
+
+  📝 REASONING:
+     The Man from Nowhere is a high-octane action movie with intense martial arts sequences, a brutal rampage, and a tragic hero storyline, making it a perfect fit for the EKIPA group's preferences.
+
+  🎥 ALTERNATYWY:
+     1. The Gangster, the Cop, the Devil  (Action, Crime, Thriller)  ⭐7.8  🕐110min
+     2. Kill  (Action, Crime, Thriller, Drama)  ⭐7.121  🕐105min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [14/20] crew_3_runtime_extremes
+  Typ: EKIPA  |  Userzy: Ania, Basia, Celina
+  Opis: Jeden chce krótki film, drugi długi — test kalkulacji runtime
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 347e6913-b031-4353-b1e0-a0cc238bab53  (0.24s)
+  → POST /recommendation/347e6913-b031-4353-b1e0-a0cc238bab53 ...
+  ✅ Rekomendacja OK  (2.4s)
+
+  🎬 GŁÓWNY FILM: Ranma 1/2 the Movie 2: Nihao My Concubine
+     Gatunki:     Action, Comedy, Animation, Adventure
+     Ocena:       7.9
+     Runtime:     63 min
+     Data:        1992-08-02
+     Poster:      https://image.tmdb.org/t/p/w500/jG1fVO88kaitXP4thiQcEZebL7t.jpg
+
+  💭 THOUGHT:
+     Group wants Action, Adventure, Comedy movies that are casual, easy to watch, entertaining, feel-good, fun, lighthearted, and popcorn-like, Ranma 1/2 the Movie 2: Nihao My Concubine fits perfectly
+
+  📝 REASONING:
+     Ranma 1/2 the Movie 2: Nihao My Concubine is a perfect fit for the group's preferences as it combines action, adventure, and comedy elements with a lighthearted tone, making it an entertaining and feel-good movie.
+
+  🎥 ALTERNATYWY:
+     1. The Lion King 1½  (Family, Animation, Comedy, Adventure)  ⭐6.578  🕐77min
+     2. We Bare Bears: The Movie  (Animation, Adventure, Family, Comedy, TV Movie)  ⭐7.8  🕐69min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [15/20] crew_3_one_empty_prefs
+  Typ: EKIPA  |  Userzy: Jan, Piotr, Karol
+  Opis: Jeden user nie podał vibes — system musi sobie poradzić
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 450ab5e8-d52c-484c-b7ba-6ffaa46a33a6  (0.76s)
+  → POST /recommendation/450ab5e8-d52c-484c-b7ba-6ffaa46a33a6 ...
+  ✅ Rekomendacja OK  (3.33s)
+
+  🎬 GŁÓWNY FILM: Oldboy
+     Gatunki:     Drama, Thriller, Mystery, Action
+     Ocena:       8.239
+     Runtime:     120 min
+     Data:        2003-11-21
+     Poster:      https://image.tmdb.org/t/p/w500/pWDtjs568ZfOTMbURQBYuT4Qxka.jpg
+
+  💭 THOUGHT:
+     EKIPA group has diverse preferences, so I chose a movie that combines elements from various genres and meets the requirements of both Piotr and Karol.
+
+  📝 REASONING:
+     Oldboy is a complex, thought-provoking movie with a slow-burn pace, making it appealing to Piotr's taste. It also features intense survival, martial arts, and a plot twist, which aligns with Karol's preferences.
+
+  🎥 ALTERNATYWY:
+     1. Wind River  (Crime, Mystery, Drama, Thriller)  ⭐7.435  🕐107min
+     2. Gattaca  (Thriller, Science Fiction, Mystery, Romance)  ⭐7.566  🕐107min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [16/20] family_safe_choice
+  Typ: RODZINA  |  Userzy: Mama, Tata, Dziecko
+  Opis: Mama, tata, dziecko — nic strasznego, nic ambitnego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 054ff9fe-c151-4482-8a3b-557edbcd25bd  (0.53s)
+  → POST /recommendation/054ff9fe-c151-4482-8a3b-557edbcd25bd ...
+  ✅ Rekomendacja OK  (3.92s)
+
+  🎬 GŁÓWNY FILM: Big Hero 6
+     Gatunki:     Adventure, Family, Animation, Action, Comedy
+     Ocena:       7.7
+     Runtime:     102 min
+     Data:        2014-10-24
+     Poster:      https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg
+
+  💭 THOUGHT:
+     Family movie night with a mix of action, adventure, comedy, and fantasy elements, Big Hero 6 fits the bill with its blend of superhero action, coming of age, and humor.
+
+  📝 REASONING:
+     Big Hero 6 is a classic Disney movie that combines action, adventure, and comedy, making it a great fit for a family movie night. Its themes of coming of age, friendship, and superhero action will appeal to both kids and adults.
+
+  🎥 ALTERNATYWY:
+     1. Back to the Future  (Adventure, Comedy, Science Fiction)  ⭐8.324  🕐116min
+     2. The Croods: A New Age  (Animation, Family, Adventure, Fantasy, Comedy)  ⭐7.446  🕐95min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [17/20] family_teen_vs_parents
+  Typ: RODZINA  |  Userzy: Mama, Tata, Syn, Córka
+  Opis: Konflikt pokoleniowy — młodzi chcą horroru, starsi komedii
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 770238c2-410f-4b8c-823b-32f7224ba2d5  (0.66s)
+  → POST /recommendation/770238c2-410f-4b8c-823b-32f7224ba2d5 ...
+  ✅ Rekomendacja OK  (4.87s)
+
+  🎬 GŁÓWNY FILM: Flipped
+     Gatunki:     Romance, Drama
+     Ocena:       8.003
+     Runtime:     89 min
+     Data:        2010-08-06
+     Poster:      https://image.tmdb.org/t/p/w500/6zDYFigohwncqFL00MKbFV01dWb.jpg
+
+  💭 THOUGHT:
+     Family movie night with a mix of comedy, drama, and romance, and some action for the kids, I think Flipped is the best fit
+
+  📝 REASONING:
+     Flipped is a romantic comedy-drama that fits the family movie night vibe, with a charming love story and a mix of humor and heart. It's a light-hearted and easy to watch film that should appeal to both kids and adults.
+
+  🎥 ALTERNATYWY:
+     1. Nimona  (Animation, Family, Action, Adventure, Fantasy, Comedy)  ⭐7.9  🕐99min
+     2. Universal  (Comedy, Drama, Science Fiction)  ⭐10.0  🕐90min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [18/20] family_nostalgia_harmony
+  Typ: RODZINA  |  Userzy: Babcia, Dziadek, Mama, Tata, Wnuk
+  Opis: Cała rodzina wspomina stare czasy — klasyki
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 58b9f2a2-219f-416b-a59c-e45d6366c094  (0.68s)
+  → POST /recommendation/58b9f2a2-219f-416b-a59c-e45d6366c094 ...
+  ✅ Rekomendacja OK  (4.22s)
+
+  🎬 GŁÓWNY FILM: Bridge to Terabithia
+     Gatunki:     Adventure, Drama, Family
+     Ocena:       7.306
+     Runtime:     95 min
+     Data:        2007-02-15
+     Poster:      https://image.tmdb.org/t/p/w500/3xFxGodKPMFLheS8rujFSmLfcq4.jpg
+
+  💭 THOUGHT:
+     The group wants a mix of adventure, family, and classic elements, so I chose a movie that fits all these criteria.
+
+  📝 REASONING:
+     Bridge to Terabithia is a classic coming-of-age story that fits the group's preferences for adventure, family, and nostalgic elements. It's a heartwarming and uplifting film that explores themes of friendship, imagination, and overcoming adversity.
+
+  🎥 ALTERNATYWY:
+     1. The Lion King  (Family, Animation, Drama, Adventure)  ⭐8.252  🕐89min
+     2. A Goofy Movie  (Adventure, Comedy, Romance, Animation, Family)  ⭐7.02  🕐78min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [19/20] maximum_conflict
+  Typ: EKIPA  |  Userzy: X, Y, Z
+  Opis: 3 osoby, każdy chce czegoś innego i blokuje to co inni lubią
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 3cb2c8f7-8944-4713-bab2-0f0d9ff07925  (0.96s)
+  → POST /recommendation/3cb2c8f7-8944-4713-bab2-0f0d9ff07925 ...
+  ✅ Rekomendacja OK  (5.04s)
+
+  🎬 GŁÓWNY FILM: A Tale of Two Sisters
+     Gatunki:     Drama, Horror, Mystery
+     Ocena:       7.103
+     Runtime:     115 min
+     Data:        2003-06-13
+     Poster:      https://image.tmdb.org/t/p/w500/l3exwhwyGE0NnHJ3lFQ7eXoBSkH.jpg
+
+  💭 THOUGHT:
+     EKIPA group has a mix of preferences, but Drama, Horror, Mystery, and Thriller genres are most represented. I'll choose a movie that fits these genres and has elements of horror, dark atmosphere, and complex plot.
+
+  📝 REASONING:
+     A Tale of Two Sisters is a psychological horror film with a complex plot, dark atmosphere, and elements of mystery. It fits the group's preferences for Drama, Horror, and Mystery genres.
+
+  🎥 ALTERNATYWY:
+     1. Rashomon  (Crime, Drama, Mystery)  ⭐8.045  🕐88min
+     2. Wind River  (Crime, Mystery, Drama, Thriller)  ⭐7.435  🕐107min
+
+  ⏳ Czekam 32s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [20/20] solo_all_vibes
+  Typ: SOLO  |  Userzy: MaxVibes
+  Opis: User zaznaczył wszystkie viby — system musi wybrać coś wszechstronnego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 79448719-c2b5-4535-9a03-6eea16c37a37  (1.55s)
+  → POST /recommendation/79448719-c2b5-4535-9a03-6eea16c37a37 ...
+  ✅ Rekomendacja OK  (7.82s)
+
+  🎬 GŁÓWNY FILM: Pulp Fiction
+     Gatunki:     Thriller, Crime, Comedy
+     Ocena:       8.486
+     Runtime:     154 min
+     Data:        1994-09-10
+     Poster:      https://image.tmdb.org/t/p/w500/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg
+
+  💭 THOUGHT:
+     MaxVibes wants a mix of action, comedy, and drama, so I've chosen a movie that fits these genres and has a complex plot, which is a key element in MaxVibes' preferences.
+
+  📝 REASONING:
+     Pulp Fiction is a classic crime film with a complex non-linear storyline, witty dialogue, and a mix of dark humor and intense action sequences, making it a great fit for MaxVibes' preferences.
+
+  🎥 ALTERNATYWY:
+     1. Se7en  (Crime, Mystery, Thriller)  ⭐8.379  🕐127min
+     2. Beating Hearts  (Romance, Crime, Drama)  ⭐7.197  🕐160min
+
+
+══════════════════════════════════════════════════════════════════════
+  PODSUMOWANIE
+══════════════════════════════════════════════════════════════════════
+  ✅ Udane:    20/20
+  ❌ Błędy:    0/20
+  ⏱️  Czas:     690.3s  (średnio 34.5s/scenariusz)
+
+  Nr   Scenariusz                          Film                           Czas     Status
+  ──── ─────────────────────────────────── ────────────────────────────── ──────── ──────
+  1    solo_pizza_chill                    Free Guy                       3.5s     ✅
+  2    solo_ambitious_cinephile            Gattaca                        3.5s     ✅
+  3    solo_horror_night                   Presence                       2.4s     ✅
+  4    solo_nostalgia_trip                 Shrek                          2.8s     ✅
+  5    solo_no_preferences                 Novocaine                      2.2s     ✅
+  6    date_both_romantic                  Four Weddings and a Funeral    3.2s     ✅
+  7    date_romance_vs_action              Through My Window              3.4s     ✅
+  8    date_guilty_pleasure_harmony        Scary Movie                    3.0s     ✅
+  9    date_horror_romance_mix             Rashomon                       3.0s     ✅
+  10   crew_2_identical_vibes              Kung Fu Hustle                 2.4s     ✅
+  11   crew_3_diverse_conflict             Ring                           3.6s     ✅
+  12   crew_4_all_chill                    A Goofy Movie                  3.2s     ✅
+  13   crew_5_action_dominant              The Man from Nowhere           3.6s     ✅
+  14   crew_3_runtime_extremes             Ranma 1/2 the Movie 2: Nihao   2.4s     ✅
+  15   crew_3_one_empty_prefs              Oldboy                         3.3s     ✅
+  16   family_safe_choice                  Big Hero 6                     3.9s     ✅
+  17   family_teen_vs_parents              Flipped                        4.9s     ✅
+  18   family_nostalgia_harmony            Bridge to Terabithia           4.2s     ✅
+  19   maximum_conflict                    A Tale of Two Sisters          5.0s     ✅
+  20   solo_all_vibes                      Pulp Fiction                   7.8s     ✅
+
+══════════════════════════════════════════════════════════════════════
+  Wyniki zapisane do: C:\Users\fabia\projects\movieNight\scripts\results_20260511_203815.txt
+══════════════════════════════════════════════════════════════════════
+
+  Surowe dane JSON: C:\Users\fabia\projects\movieNight\scripts\results_20260511_203815.json

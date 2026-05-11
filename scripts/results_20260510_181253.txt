@@ -165,7 +165,7 @@
   Opis: Oboje chcą romantycznego wieczoru — harmonia
 ──────────────────────────────────────────────────────────────────────
   → POST /recommendation/session ...
-  ✅ Sesja zapisana: d0979da7-7e65-4046-bbe0-87de40e50429  (7.46s)
+  ✅ Sesja zapisana: d0979da7-7e65-4046-bbe0-87de40e50429  (7.46s)   
   → POST /recommendation/d0979da7-7e65-4046-bbe0-87de40e50429 ...
   ✅ Rekomendacja OK  (110.22s)
 

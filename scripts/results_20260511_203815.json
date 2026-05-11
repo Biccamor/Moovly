@@ -1,0 +1,1094 @@
+[
+  {
+    "name": "solo_pizza_chill",
+    "meeting_type": "SOLO",
+    "users": [
+      "Tomek"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "4dc2d269-d758-4eab-94c8-18a7fc6a2729",
+    "recommendation": {
+      "thought": "Tomek wants Action, Adventure, Comedy movies that are casual, easy to watch, entertaining, feel-good, fun, lighthearted, and a popcorn movie, so I chose a movie that fits these vibes",
+      "movie_title": "Free Guy",
+      "reasoning_pl": "Free Guy is a great fit for Tomek's preferences as it's an action-packed, adventurous, and comedic movie that's easy to watch and entertaining. It's a feel-good film that's perfect for a solo meeting.",
+      "extra_movies": [
+        {
+          "movie_title": "The Professionals",
+          "genres": [
+            "Western",
+            "Adventure",
+            "Action"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/sH4Clw7QrtH23xl9o4sOpHNkRIz.jpg",
+          "release_date": "1966-11-01",
+          "runtime": 117,
+          "rating": 7.09
+        },
+        {
+          "movie_title": "Onward",
+          "genres": [
+            "Family",
+            "Comedy",
+            "Adventure",
+            "Animation",
+            "Fantasy"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/f4aul3FyD3jv3v4bul1IrkWZvzq.jpg",
+          "release_date": "2020-02-29",
+          "runtime": 102,
+          "rating": 7.641
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/dxraF0qPr1OEgJk17ltQTO84kQF.jpg",
+      "genres": [
+        "Comedy",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "release_date": "2021-08-11",
+      "runtime": 115,
+      "rating": 7.453
+    },
+    "time_save": 0.79,
+    "time_recommend": 3.47
+  },
+  {
+    "name": "solo_ambitious_cinephile",
+    "meeting_type": "SOLO",
+    "users": [
+      "Marta"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "51da5427-a8e4-4303-812b-782169869c1b",
+    "recommendation": {
+      "thought": "Marta wants complex and thought-provoking movies, I've chosen a film that fits her preferences for drama, mystery, science fiction, and thriller genres.",
+      "movie_title": "Gattaca",
+      "reasoning_pl": "Gattaca is a thought-provoking and complex film that explores themes of genetics, identity, and humanity. Its intricate plot and philosophical undertones make it a great fit for Marta's preferences.",
+      "extra_movies": [
+        {
+          "movie_title": "Memento",
+          "genres": [
+            "Mystery",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg",
+          "release_date": "2000-10-11",
+          "runtime": 113,
+          "rating": 8.176
+        },
+        {
+          "movie_title": "Predestination",
+          "genres": [
+            "Science Fiction",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/38Xr1JnV1ZcLQ55zmdSp6n475cZ.jpg",
+          "release_date": "2014-08-28",
+          "runtime": 98,
+          "rating": 7.417
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg",
+      "genres": [
+        "Thriller",
+        "Science Fiction",
+        "Mystery",
+        "Romance"
+      ],
+      "release_date": "1997-07-09",
+      "runtime": 107,
+      "rating": 7.566
+    },
+    "time_save": 0.38,
+    "time_recommend": 3.52
+  },
+  {
+    "name": "solo_horror_night",
+    "meeting_type": "SOLO",
+    "users": [
+      "Kasia"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "031064ce-40f1-42c4-8fc2-4e939a3612e1",
+    "recommendation": {
+      "thought": "Kasia wants Horror, Mystery, Thriller movies with dark atmosphere, demon, ghost story, jump scares, macabre, pure HORROR, scary, sinister, supernatural horror, terrifying, perfect for a solo meeting",
+      "movie_title": "Presence",
+      "reasoning_pl": "Presence is a great fit for Kasia's preferences, with a haunted house, entity, death, and grief, creating a dark atmosphere. It also has elements of supernatural horror and terrifying moments, making it perfect for a solo meeting.",
+      "extra_movies": [
+        {
+          "movie_title": "Immaculate",
+          "genres": [
+            "Horror",
+            "Mystery",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/zyopv7D5j7cfswG0NYiA14qAdPC.jpg",
+          "release_date": "2024-03-20",
+          "runtime": 89,
+          "rating": 6.209
+        },
+        {
+          "movie_title": "The Devil's Bride",
+          "genres": [
+            "Horror",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/rRkM4hAoT9wMPsYeHj2SdgJ3lmz.jpg",
+          "release_date": "2025-01-16",
+          "runtime": 91,
+          "rating": 6.0
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/xZIGHoHj0DF0zdibwa66cRWHdHO.jpg",
+      "genres": [
+        "Horror",
+        "Thriller",
+        "Drama"
+      ],
+      "release_date": "2025-01-17",
+      "runtime": 84,
+      "rating": 6.127
+    },
+    "time_save": 0.18,
+    "time_recommend": 2.37
+  },
+  {
+    "name": "solo_nostalgia_trip",
+    "meeting_type": "SOLO",
+    "users": [
+      "Piotr"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "a327e38d-763f-4dcd-b635-a5e146d9a885",
+    "recommendation": {
+      "thought": "Group wants Adventure, Family, Fantasy, Science Fiction movies with elements like 80s, 90s, childhood memories, chosen one, classic, coming of age, epic, grand scale, hero's journey, mythology, old movies, old school, quest, retro, sprawling, throwback, world-building, Shrek is the best fit",
+      "movie_title": "Shrek",
+      "reasoning_pl": "Shrek is a classic adventure movie with a grand scale and a hero's journey, set in a fantasy world with a chosen one theme. It has elements of childhood memories and a retro feel, making it a great fit for the group's preferences.",
+      "extra_movies": [
+        {
+          "movie_title": "Star Wars",
+          "genres": [
+            "Adventure",
+            "Action",
+            "Science Fiction"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+          "release_date": "1977-05-25",
+          "runtime": 121,
+          "rating": 8.2
+        },
+        {
+          "movie_title": "The Magic Faraway Tree",
+          "genres": [
+            "Family",
+            "Fantasy",
+            "Adventure"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/mtS8mW6aLuartATut8TrD39zTIG.jpg",
+          "release_date": "2026-03-26",
+          "runtime": 110,
+          "rating": 8.5
+        }
+      ],
+      "poster_path": "",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Animation",
+        "Fantasy"
+      ],
+      "release_date": null,
+      "runtime": null,
+      "rating": null
+    },
+    "time_save": 0.33,
+    "time_recommend": 2.77
+  },
+  {
+    "name": "solo_no_preferences",
+    "meeting_type": "SOLO",
+    "users": [
+      "Ghost"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "af8962d5-06e7-4b87-a128-c6ef45b1cf8c",
+    "recommendation": {
+      "thought": "Ghost wants all kinds of movies, so I've chosen a movie that's a mix of genres and has a unique plot.",
+      "movie_title": "Novocaine",
+      "reasoning_pl": "Novocaine is a dark comedy with action elements, making it a great fit for a group that wants all kinds of movies. The plot is unique and engaging, with a protagonist who turns his inability to feel pain into an unexpected strength.",
+      "extra_movies": [
+        {
+          "movie_title": "Spaceman",
+          "genres": [
+            "Science Fiction",
+            "Adventure",
+            "Drama"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/f46WvKEsBn98WJbPJcO47ZoKn6B.jpg",
+          "release_date": "2024-02-23",
+          "runtime": 108,
+          "rating": 6.707
+        },
+        {
+          "movie_title": "Cowboy Bebop: The Movie",
+          "genres": [
+            "Action",
+            "Animation",
+            "Science Fiction"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/34H5bsNc0EPILVr49TfOYXj50qV.jpg",
+          "release_date": "2001-09-01",
+          "runtime": 115,
+          "rating": 7.7
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/xmMHGz9dVRaMY6rRAlEX4W0Wdhm.jpg",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Thriller"
+      ],
+      "release_date": "2025-03-12",
+      "runtime": 110,
+      "rating": 6.795
+    },
+    "time_save": 0.11,
+    "time_recommend": 2.21
+  },
+  {
+    "name": "date_both_romantic",
+    "meeting_type": "RANDKA",
+    "users": [
+      "Anna",
+      "Michał"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "3a8f0dac-0a83-4b6c-ae59-cc449b38d580",
+    "recommendation": {
+      "thought": "Group wants a mix of comedy, drama, and romance with elements of charming, chemistry, and emotional connections, I've chosen a movie that fits their preferences.",
+      "movie_title": "Four Weddings and a Funeral",
+      "reasoning_pl": "Four Weddings and a Funeral is a classic romantic comedy that explores the complexities of relationships, love, and human connections. It has a charming and witty tone, making it perfect for a group looking for a mix of comedy, drama, and romance.",
+      "extra_movies": [
+        {
+          "movie_title": "Love Story",
+          "genres": [
+            "Romance",
+            "Drama"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/5A7SGcT1GlhWfHsCRQQtGe0TpJB.jpg",
+          "release_date": "1970-12-16",
+          "runtime": 100,
+          "rating": 6.8
+        },
+        {
+          "movie_title": "The Graduate",
+          "genres": [
+            "Drama",
+            "Romance",
+            "Comedy"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/z1Z1tZMR66RxcNeHbwoEhYeqOlP.jpg",
+          "release_date": "1967-12-21",
+          "runtime": 106,
+          "rating": 7.633
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/qa72G2VS0bpxms6yo0tI9vsHm2e.jpg",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "release_date": "1994-03-09",
+      "runtime": 117,
+      "rating": 6.773
+    },
+    "time_save": 0.24,
+    "time_recommend": 3.24
+  },
+  {
+    "name": "date_romance_vs_action",
+    "meeting_type": "RANDKA",
+    "users": [
+      "Ola",
+      "Bartek"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "deee9e6f-eb9c-4081-b702-529d0b1a5330",
+    "recommendation": {
+      "thought": "Group wants a mix of romance and drama for a RANDKA meeting, and I've chosen a romantic comedy that fits their preferences",
+      "movie_title": "Through My Window",
+      "reasoning_pl": "Through My Window is a romantic comedy that fits the group's preferences for a love story, moving, and heartbreaking. It also has elements of drama and romance, making it a great fit for a RANDKA meeting.",
+      "extra_movies": [
+        {
+          "movie_title": "The Man from Nowhere",
+          "genres": [
+            "Action",
+            "Thriller",
+            "Crime"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/ld19CFIo27t41JXSGZdaPMUGTxh.jpg",
+          "release_date": "2010-08-04",
+          "runtime": 119,
+          "rating": 7.692
+        },
+        {
+          "movie_title": "Gattaca",
+          "genres": [
+            "Thriller",
+            "Science Fiction",
+            "Mystery",
+            "Romance"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg",
+          "release_date": "1997-07-09",
+          "runtime": 107,
+          "rating": 7.566
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/jmkpZvMVIRrMFevxzOubSBfG0s0.jpg",
+      "genres": [
+        "Romance",
+        "Drama",
+        "Comedy"
+      ],
+      "release_date": "2022-02-04",
+      "runtime": 112,
+      "rating": 7.352
+    },
+    "time_save": 0.44,
+    "time_recommend": 3.44
+  },
+  {
+    "name": "date_guilty_pleasure_harmony",
+    "meeting_type": "RANDKA",
+    "users": [
+      "Zuzia",
+      "Dawid"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "c4c929a3-dd24-4f72-851b-021c53ee87d6",
+    "recommendation": {
+      "thought": "Group wants campy, cheesy, cult classic, funny, hilarious, jokes, laugh out loud, over-the-top, predictable but fun, pure comedy, satire, slapstick, so bad it's good, spoof, teen drama movies, Scary Movie fits perfectly",
+      "movie_title": "Scary Movie",
+      "reasoning_pl": "Scary Movie is a classic horror spoof that fits perfectly with the group's preferences for campy, cheesy, and cult classic elements. It's a hilarious and over-the-top comedy that will surely provide plenty of laughs.",
+      "extra_movies": [
+        {
+          "movie_title": "Ballerina",
+          "genres": [
+            "Action",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/oE7xtGDqZnr7tFHfwb8oM9iRW6H.jpg",
+          "release_date": "2023-10-06",
+          "runtime": 93,
+          "rating": 7.0
+        },
+        {
+          "movie_title": "Ready or Not",
+          "genres": [
+            "Horror",
+            "Comedy"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/oJD9KQFoObZmxAS1je56SIFVNJt.jpg",
+          "release_date": "2019-08-21",
+          "runtime": 95,
+          "rating": 7.0
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/fVQFPRuw3yWXojYDJvA5EoFjUOY.jpg",
+      "genres": [
+        "Comedy"
+      ],
+      "release_date": "2000-07-07",
+      "runtime": 88,
+      "rating": 6.386
+    },
+    "time_save": 0.46,
+    "time_recommend": 3.0
+  },
+  {
+    "name": "date_horror_romance_mix",
+    "meeting_type": "RANDKA",
+    "users": [
+      "Igor",
+      "Lena"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "bfc719ee-93bc-4121-a50e-9b79c7b18f5d",
+    "recommendation": {
+      "thought": "Group wants Horror and Mystery movies, Rashomon is the best fit",
+      "movie_title": "Rashomon",
+      "reasoning_pl": "Rashomon is a classic mystery film with elements of horror and dark atmosphere, fitting the group's preferences. It explores the subjectivity of truth and features a court case with multiple perspectives, which aligns with Igor's interest in mystery.",
+      "extra_movies": [
+        {
+          "movie_title": "The Rocky Horror Picture Show",
+          "genres": [
+            "Comedy",
+            "Science Fiction",
+            "Fantasy",
+            "Horror"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/3pyE6ZqDbuJi7zrNzzQzcKTWdmN.jpg",
+          "release_date": "1975-08-14",
+          "runtime": 99,
+          "rating": 7.44
+        },
+        {
+          "movie_title": "Whiplash",
+          "genres": [
+            "Drama",
+            "Music",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+          "release_date": "2014-10-10",
+          "runtime": 107,
+          "rating": 8.374
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/vL7Xw04nFMHwnvXRFCmYYAzMUvY.jpg",
+      "genres": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "release_date": "1950-08-26",
+      "runtime": 88,
+      "rating": 8.045
+    },
+    "time_save": 0.3,
+    "time_recommend": 2.95
+  },
+  {
+    "name": "crew_2_identical_vibes",
+    "meeting_type": "EKIPA",
+    "users": [
+      "Kamil",
+      "Łukasz"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "dfb7ec2d-55cd-462f-9693-57d14c3a40ce",
+    "recommendation": {
+      "thought": "Both users want action-packed movies with a casual tone, I've chosen a movie that fits their preferences.",
+      "movie_title": "Kung Fu Hustle",
+      "reasoning_pl": "Kung Fu Hustle is a lighthearted, entertaining, and action-packed movie with martial arts, gangsters, and a feel-good tone. It's a perfect fit for a casual EKIPA meeting.",
+      "extra_movies": [
+        {
+          "movie_title": "Lethal Weapon",
+          "genres": [
+            "Action",
+            "Thriller",
+            "Crime"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/6gt44oqb4nE8vflPElffeGwsHVl.jpg",
+          "release_date": "1987-03-06",
+          "runtime": 110,
+          "rating": 7.286
+        },
+        {
+          "movie_title": "Police Story",
+          "genres": [
+            "Action",
+            "Crime",
+            "Comedy"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/1eFB0Iy1TMU4VO5hMcoCE064JAT.jpg",
+          "release_date": "1985-12-14",
+          "runtime": 100,
+          "rating": 7.522
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/exbyTbrvRUDKN2mcNEuVor4VFQW.jpg",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Crime",
+        "Fantasy"
+      ],
+      "release_date": "2004-02-10",
+      "runtime": 99,
+      "rating": 7.486
+    },
+    "time_save": 0.37,
+    "time_recommend": 2.43
+  },
+  {
+    "name": "crew_3_diverse_conflict",
+    "meeting_type": "EKIPA",
+    "users": [
+      "Adam",
+      "Ewa",
+      "Marek"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "1a57c520-b22f-4b3f-ad54-51f903ee97da",
+    "recommendation": {
+      "thought": "EKIPA group preferences suggest a mix of genres, I've chosen a movie that combines elements of Horror and Mystery, while also fitting Marek's preferences for Adventure and Fantasy.",
+      "movie_title": "Ring",
+      "reasoning_pl": "Ring is a classic Horror movie with a dark atmosphere, a ghost story, and jump scares, fitting Adam's preferences. It also has elements of Mystery, making it a good fit for the group. Additionally, it has a complex timeline and a plot twist, which aligns with Marek's preferences for Adventure and Fantasy.",
+      "extra_movies": [
+        {
+          "movie_title": "Together",
+          "genres": [
+            "Horror",
+            "Romance"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/80slKYVM5teFH3kz6ouWrZXveqj.jpg",
+          "release_date": "2025-07-28",
+          "runtime": 102,
+          "rating": 7.0
+        },
+        {
+          "movie_title": "Chainsaw Man - The Movie: Reze Arc",
+          "genres": [
+            "Animation",
+            "Action",
+            "Romance",
+            "Fantasy"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/pHyxb2RV5wLlboAwm9ZJ9qTVEDw.jpg",
+          "release_date": "2025-09-19",
+          "runtime": 99,
+          "rating": 8.33
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/1YINof6kN5yRdePEbcU5360ejoq.jpg",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "release_date": "1998-01-31",
+      "runtime": 96,
+      "rating": 7.1
+    },
+    "time_save": 0.67,
+    "time_recommend": 3.59
+  },
+  {
+    "name": "crew_4_all_chill",
+    "meeting_type": "EKIPA",
+    "users": [
+      "Szymon",
+      "Filip",
+      "Kuba",
+      "Daniel"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "402360b6-c226-4196-81a3-0043310ccdc6",
+    "recommendation": {
+      "thought": "EKIPA meeting with a mix of preferences, I chose a movie that fits most of the users' preferences",
+      "movie_title": "A Goofy Movie",
+      "reasoning_pl": "A Goofy Movie is a lighthearted, entertaining, and fun movie that fits most of the users' preferences. It has elements of action, adventure, comedy, and romance, making it a great fit for the EKIPA meeting.",
+      "extra_movies": [
+        {
+          "movie_title": "Nimona",
+          "genres": [
+            "Animation",
+            "Family",
+            "Action",
+            "Adventure",
+            "Fantasy",
+            "Comedy"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/2NQljeavtfl22207D1kxLpa4LS3.jpg",
+          "release_date": "2023-06-23",
+          "runtime": 99,
+          "rating": 7.9
+        },
+        {
+          "movie_title": "Elemental",
+          "genres": [
+            "Family",
+            "Fantasy",
+            "Comedy",
+            "Romance",
+            "Animation"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/4Y1WNkd88JXmGfhtWR7dmDAo1T2.jpg",
+          "release_date": "2023-06-14",
+          "runtime": 102,
+          "rating": 7.577
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/bycmMhO3iIoEDzP768sUjq2RV4T.jpg",
+      "genres": [
+        "Adventure",
+        "Comedy",
+        "Romance",
+        "Animation",
+        "Family"
+      ],
+      "release_date": "1995-04-05",
+      "runtime": 78,
+      "rating": 7.02
+    },
+    "time_save": 0.44,
+    "time_recommend": 3.22
+  },
+  {
+    "name": "crew_5_action_dominant",
+    "meeting_type": "EKIPA",
+    "users": [
+      "Wojtek",
+      "Paweł",
+      "Tomasz",
+      "Jakub",
+      "Robert"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "2e349a82-d766-4ec0-b494-f7eb6cb1baac",
+    "recommendation": {
+      "thought": "EKIPA group wants high-octane action and thrilling movies, The Man from Nowhere is the best fit",
+      "movie_title": "The Man from Nowhere",
+      "reasoning_pl": "The Man from Nowhere is a high-octane action movie with intense martial arts sequences, a brutal rampage, and a tragic hero storyline, making it a perfect fit for the EKIPA group's preferences.",
+      "extra_movies": [
+        {
+          "movie_title": "The Gangster, the Cop, the Devil",
+          "genres": [
+            "Action",
+            "Crime",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/oHlM4abRm6BzrRcz9Nup1uidw9H.jpg",
+          "release_date": "2019-05-15",
+          "runtime": 110,
+          "rating": 7.8
+        },
+        {
+          "movie_title": "Kill",
+          "genres": [
+            "Action",
+            "Crime",
+            "Thriller",
+            "Drama"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/m2zXTuNPkywdYLyWlVyJZW2QOJH.jpg",
+          "release_date": "2024-07-03",
+          "runtime": 105,
+          "rating": 7.121
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/ld19CFIo27t41JXSGZdaPMUGTxh.jpg",
+      "genres": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
+      "release_date": "2010-08-04",
+      "runtime": 119,
+      "rating": 7.692
+    },
+    "time_save": 0.67,
+    "time_recommend": 3.65
+  },
+  {
+    "name": "crew_3_runtime_extremes",
+    "meeting_type": "EKIPA",
+    "users": [
+      "Ania",
+      "Basia",
+      "Celina"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "347e6913-b031-4353-b1e0-a0cc238bab53",
+    "recommendation": {
+      "thought": "Group wants Action, Adventure, Comedy movies that are casual, easy to watch, entertaining, feel-good, fun, lighthearted, and popcorn-like, Ranma 1/2 the Movie 2: Nihao My Concubine fits perfectly",
+      "movie_title": "Ranma 1/2 the Movie 2: Nihao My Concubine",
+      "reasoning_pl": "Ranma 1/2 the Movie 2: Nihao My Concubine is a perfect fit for the group's preferences as it combines action, adventure, and comedy elements with a lighthearted tone, making it an entertaining and feel-good movie.",
+      "extra_movies": [
+        {
+          "movie_title": "The Lion King 1½",
+          "genres": [
+            "Family",
+            "Animation",
+            "Comedy",
+            "Adventure"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/u2hN0WT7Dz46HfhQbr6uzSYfVW4.jpg",
+          "release_date": "2004-10-28",
+          "runtime": 77,
+          "rating": 6.578
+        },
+        {
+          "movie_title": "We Bare Bears: The Movie",
+          "genres": [
+            "Animation",
+            "Adventure",
+            "Family",
+            "Comedy",
+            "TV Movie"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/khtIr0Gxtz52T10RRQZ42o1a5Ry.jpg",
+          "release_date": "2020-06-30",
+          "runtime": 69,
+          "rating": 7.8
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/jG1fVO88kaitXP4thiQcEZebL7t.jpg",
+      "genres": [
+        "Action",
+        "Comedy",
+        "Animation",
+        "Adventure"
+      ],
+      "release_date": "1992-08-02",
+      "runtime": 63,
+      "rating": 7.9
+    },
+    "time_save": 0.24,
+    "time_recommend": 2.4
+  },
+  {
+    "name": "crew_3_one_empty_prefs",
+    "meeting_type": "EKIPA",
+    "users": [
+      "Jan",
+      "Piotr",
+      "Karol"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "450ab5e8-d52c-484c-b7ba-6ffaa46a33a6",
+    "recommendation": {
+      "thought": "EKIPA group has diverse preferences, so I chose a movie that combines elements from various genres and meets the requirements of both Piotr and Karol.",
+      "movie_title": "Oldboy",
+      "reasoning_pl": "Oldboy is a complex, thought-provoking movie with a slow-burn pace, making it appealing to Piotr's taste. It also features intense survival, martial arts, and a plot twist, which aligns with Karol's preferences.",
+      "extra_movies": [
+        {
+          "movie_title": "Wind River",
+          "genres": [
+            "Crime",
+            "Mystery",
+            "Drama",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe6Ad.jpg",
+          "release_date": "2017-08-03",
+          "runtime": 107,
+          "rating": 7.435
+        },
+        {
+          "movie_title": "Gattaca",
+          "genres": [
+            "Thriller",
+            "Science Fiction",
+            "Mystery",
+            "Romance"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/eSKr5Fl1MEC7zpAXaLWBWSBjgJq.jpg",
+          "release_date": "1997-07-09",
+          "runtime": 107,
+          "rating": 7.566
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/pWDtjs568ZfOTMbURQBYuT4Qxka.jpg",
+      "genres": [
+        "Drama",
+        "Thriller",
+        "Mystery",
+        "Action"
+      ],
+      "release_date": "2003-11-21",
+      "runtime": 120,
+      "rating": 8.239
+    },
+    "time_save": 0.76,
+    "time_recommend": 3.33
+  },
+  {
+    "name": "family_safe_choice",
+    "meeting_type": "RODZINA",
+    "users": [
+      "Mama",
+      "Tata",
+      "Dziecko"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "054ff9fe-c151-4482-8a3b-557edbcd25bd",
+    "recommendation": {
+      "thought": "Family movie night with a mix of action, adventure, comedy, and fantasy elements, Big Hero 6 fits the bill with its blend of superhero action, coming of age, and humor.",
+      "movie_title": "Big Hero 6",
+      "reasoning_pl": "Big Hero 6 is a classic Disney movie that combines action, adventure, and comedy, making it a great fit for a family movie night. Its themes of coming of age, friendship, and superhero action will appeal to both kids and adults.",
+      "extra_movies": [
+        {
+          "movie_title": "Back to the Future",
+          "genres": [
+            "Adventure",
+            "Comedy",
+            "Science Fiction"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/vN5B5WgYscRGcQpVhHl6p9DDTP0.jpg",
+          "release_date": "1985-07-03",
+          "runtime": 116,
+          "rating": 8.324
+        },
+        {
+          "movie_title": "The Croods: A New Age",
+          "genres": [
+            "Animation",
+            "Family",
+            "Adventure",
+            "Fantasy",
+            "Comedy"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/tbVZ3Sq88dZaCANlUcewQuHQOaE.jpg",
+          "release_date": "2020-11-25",
+          "runtime": 95,
+          "rating": 7.446
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/2mxS4wUimwlLmI1xp6QW6NSU361.jpg",
+      "genres": [
+        "Adventure",
+        "Family",
+        "Animation",
+        "Action",
+        "Comedy"
+      ],
+      "release_date": "2014-10-24",
+      "runtime": 102,
+      "rating": 7.7
+    },
+    "time_save": 0.53,
+    "time_recommend": 3.92
+  },
+  {
+    "name": "family_teen_vs_parents",
+    "meeting_type": "RODZINA",
+    "users": [
+      "Mama",
+      "Tata",
+      "Syn",
+      "Córka"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "770238c2-410f-4b8c-823b-32f7224ba2d5",
+    "recommendation": {
+      "thought": "Family movie night with a mix of comedy, drama, and romance, and some action for the kids, I think Flipped is the best fit",
+      "movie_title": "Flipped",
+      "reasoning_pl": "Flipped is a romantic comedy-drama that fits the family movie night vibe, with a charming love story and a mix of humor and heart. It's a light-hearted and easy to watch film that should appeal to both kids and adults.",
+      "extra_movies": [
+        {
+          "movie_title": "Nimona",
+          "genres": [
+            "Animation",
+            "Family",
+            "Action",
+            "Adventure",
+            "Fantasy",
+            "Comedy"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/2NQljeavtfl22207D1kxLpa4LS3.jpg",
+          "release_date": "2023-06-23",
+          "runtime": 99,
+          "rating": 7.9
+        },
+        {
+          "movie_title": "Universal",
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Science Fiction"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/eWv3d3J5M53IaeGCkiuRG307GeN.jpg",
+          "release_date": "2025-06-21",
+          "runtime": 90,
+          "rating": 10.0
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/6zDYFigohwncqFL00MKbFV01dWb.jpg",
+      "genres": [
+        "Romance",
+        "Drama"
+      ],
+      "release_date": "2010-08-06",
+      "runtime": 89,
+      "rating": 8.003
+    },
+    "time_save": 0.66,
+    "time_recommend": 4.87
+  },
+  {
+    "name": "family_nostalgia_harmony",
+    "meeting_type": "RODZINA",
+    "users": [
+      "Babcia",
+      "Dziadek",
+      "Mama",
+      "Tata",
+      "Wnuk"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "58b9f2a2-219f-416b-a59c-e45d6366c094",
+    "recommendation": {
+      "thought": "The group wants a mix of adventure, family, and classic elements, so I chose a movie that fits all these criteria.",
+      "movie_title": "Bridge to Terabithia",
+      "reasoning_pl": "Bridge to Terabithia is a classic coming-of-age story that fits the group's preferences for adventure, family, and nostalgic elements. It's a heartwarming and uplifting film that explores themes of friendship, imagination, and overcoming adversity.",
+      "extra_movies": [
+        {
+          "movie_title": "The Lion King",
+          "genres": [
+            "Family",
+            "Animation",
+            "Drama",
+            "Adventure"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
+          "release_date": "1994-06-15",
+          "runtime": 89,
+          "rating": 8.252
+        },
+        {
+          "movie_title": "A Goofy Movie",
+          "genres": [
+            "Adventure",
+            "Comedy",
+            "Romance",
+            "Animation",
+            "Family"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/bycmMhO3iIoEDzP768sUjq2RV4T.jpg",
+          "release_date": "1995-04-05",
+          "runtime": 78,
+          "rating": 7.02
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/3xFxGodKPMFLheS8rujFSmLfcq4.jpg",
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Family"
+      ],
+      "release_date": "2007-02-15",
+      "runtime": 95,
+      "rating": 7.306
+    },
+    "time_save": 0.68,
+    "time_recommend": 4.22
+  },
+  {
+    "name": "maximum_conflict",
+    "meeting_type": "EKIPA",
+    "users": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "3cb2c8f7-8944-4713-bab2-0f0d9ff07925",
+    "recommendation": {
+      "thought": "EKIPA group has a mix of preferences, but Drama, Horror, Mystery, and Thriller genres are most represented. I'll choose a movie that fits these genres and has elements of horror, dark atmosphere, and complex plot.",
+      "movie_title": "A Tale of Two Sisters",
+      "reasoning_pl": "A Tale of Two Sisters is a psychological horror film with a complex plot, dark atmosphere, and elements of mystery. It fits the group's preferences for Drama, Horror, and Mystery genres.",
+      "extra_movies": [
+        {
+          "movie_title": "Rashomon",
+          "genres": [
+            "Crime",
+            "Drama",
+            "Mystery"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/vL7Xw04nFMHwnvXRFCmYYAzMUvY.jpg",
+          "release_date": "1950-08-26",
+          "runtime": 88,
+          "rating": 8.045
+        },
+        {
+          "movie_title": "Wind River",
+          "genres": [
+            "Crime",
+            "Mystery",
+            "Drama",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/pySivdR845Hom4u4T2WNkJxe6Ad.jpg",
+          "release_date": "2017-08-03",
+          "runtime": 107,
+          "rating": 7.435
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/l3exwhwyGE0NnHJ3lFQ7eXoBSkH.jpg",
+      "genres": [
+        "Drama",
+        "Horror",
+        "Mystery"
+      ],
+      "release_date": "2003-06-13",
+      "runtime": 115,
+      "rating": 7.103
+    },
+    "time_save": 0.96,
+    "time_recommend": 5.04
+  },
+  {
+    "name": "solo_all_vibes",
+    "meeting_type": "SOLO",
+    "users": [
+      "MaxVibes"
+    ],
+    "success": true,
+    "error": null,
+    "session_id": "79448719-c2b5-4535-9a03-6eea16c37a37",
+    "recommendation": {
+      "thought": "MaxVibes wants a mix of action, comedy, and drama, so I've chosen a movie that fits these genres and has a complex plot, which is a key element in MaxVibes' preferences.",
+      "movie_title": "Pulp Fiction",
+      "reasoning_pl": "Pulp Fiction is a classic crime film with a complex non-linear storyline, witty dialogue, and a mix of dark humor and intense action sequences, making it a great fit for MaxVibes' preferences.",
+      "extra_movies": [
+        {
+          "movie_title": "Se7en",
+          "genres": [
+            "Crime",
+            "Mystery",
+            "Thriller"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg",
+          "release_date": "1995-09-22",
+          "runtime": 127,
+          "rating": 8.379
+        },
+        {
+          "movie_title": "Beating Hearts",
+          "genres": [
+            "Romance",
+            "Crime",
+            "Drama"
+          ],
+          "poster_path": "https://image.tmdb.org/t/p/w500/yu9dRyKcUHTfKcqsomUtpord4t3.jpg",
+          "release_date": "2024-10-16",
+          "runtime": 160,
+          "rating": 7.197
+        }
+      ],
+      "poster_path": "https://image.tmdb.org/t/p/w500/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+      "genres": [
+        "Thriller",
+        "Crime",
+        "Comedy"
+      ],
+      "release_date": "1994-09-10",
+      "runtime": 154,
+      "rating": 8.486
+    },
+    "time_save": 1.55,
+    "time_recommend": 7.82
+  }
+]
