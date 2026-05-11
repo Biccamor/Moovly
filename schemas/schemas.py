@@ -8,11 +8,11 @@ VibeType = Literal["PIZZA_CHILL", "MIND_BENDER", "ADRENALINE", "DATE_NIGHT", "DE
                    "NOSTALGIA", "INSPIRING", "EPIC_JOURNEY", "GUILTY_PLEASURE", "AMBITIOUS"]
 
 class Preferences(BaseModel): #podawane przy nowym requescie/sesji
-    vibes: List[VibeType] = Field(default_factory=list)
-    hard_nos: List[VibeType] = Field(default_factory=list)
+    vibes: List[VibeType] = Field(default_factory=list, max_length=12)
+    hard_nos: List[VibeType] = Field(default_factory=list, max_length=12)
     max_runtime: int = Field(default=120, ge=30, le=240)
     allow_seen: bool = False
-    eras: List[str] = Field(default_factory=list)
+    eras: List[str] = Field(default_factory=list, max_length=10)
 
 class SavedPreferences(BaseModel): #jednorazowo podane przy rejestracji
     vibes: List[VibeType] = Field(default_factory=list)
@@ -33,7 +33,7 @@ class MovieRequest(BaseModel): #pojedynczy request o film niekoniecznie z sesji
 
 class MovieSessionUser(BaseModel): #czlonek sesji
     user_id: UUID
-    user_name: str
+    user_name: str = Field(max_length=50)
     personal_vibe: Preferences
 
 class GhostUser(BaseModel): #czlonek sesji ktory nie jest zalogowany (coming soon)
@@ -76,7 +76,6 @@ class AppSettings(BaseModel):
 
 class Settings(BaseSettings):
     database_url: str
-    ollama_base_url: str
     secret_key: str
     algorithm: str
     access_token_expire: int = 25          # minuty

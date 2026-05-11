@@ -146,6 +146,20 @@ SCENARIOS = [
     # ──────────────────────────────────────────────────────────────
 
     {
+        # 9.1. Ekipa 5 osób — super horror
+        "name": "crew_5_horror_romance_extremal_conflict",
+        "description": "5 osób — 2 horror fanów, 2 romantyków, 1 thriller fan — skrajny konflikt",
+        "meeting_type": "EKIPA",
+        "users": [
+            _user("Horror 1", vibes=["SPINE_CHILLING", "AMBITIOUS"], max_runtime=130),
+            _user("Horror 2", vibes=["SPINE_CHILLING", "ADRENALINE"], max_runtime=140),
+            _user("Horror 3", vibes=["SPINE_CHILLING", "MIND_BENDER"], max_runtime=140),
+            _user("Horror 4", vibes=["SPINE_CHILLING", "GUILTY_PLEASURE"], max_runtime=130),
+            _user("Thriller", vibes=["ADRENALINE", "MIND_BENDER", "AMBITIOUS"], max_runtime=135),
+        ],
+    },
+
+    {
         # 10. Ekipa 2 osoby — identyczne viby
         "name": "crew_2_identical_vibes",
         "description": "Dwóch kumpli — obaj chcą tego samego",

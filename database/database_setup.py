@@ -18,7 +18,7 @@ class User(SQLModel, table=True):
     email: str = Field(unique=True, index=True)
     hash_password: str
 
-    user_taste: list[float] | None = Field(sa_column=Column(Vector(1024)), default=None) # coming soon
+    user_taste: list[float] | None = Field(sa_column=Column(Vector(768)), default=None) # coming soon
     saved_preferences: dict | None = Field(default_factory=dict, sa_column=Column(JSONB))
 
 class Movie(SQLModel, table=True):
@@ -36,7 +36,7 @@ class Movie(SQLModel, table=True):
     rating: float = Field(default=None, index=True)
     tags: list[str] = Field(default_factory=list, sa_column=Column(JSONB))
 
-    embedding: list[float] | None = Field(sa_column=Column(Vector(1024), default=None))
+    embedding: list[float] | None = Field(sa_column=Column(Vector(768), default=None))
 
 class Room_Session(SQLModel,table=True):
     __tablename__ = "room_session" # type: ignore
@@ -52,7 +52,7 @@ class Room_Session(SQLModel,table=True):
     created_at: date | None = Field(default_factory=date.today)
 
     users_in_session: list[str] = Field(default_factory=list, sa_column=Column(JSONB))
-    embedding_preferences: list[float] | None = Field(sa_column=Column(Vector(1024)), default=None)
+    embedding_preferences: list[float] | None = Field(sa_column=Column(Vector(768)), default=None)
     conflict: bool= Field(default=False)
 
 

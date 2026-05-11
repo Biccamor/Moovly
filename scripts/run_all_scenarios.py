@@ -123,7 +123,7 @@ def run_scenario(idx: int, scenario: dict, token: str, f) -> dict:
     }
 
     log(f"\n{'─'*70}", f)
-    log(f"  [{idx:2d}/20] {scenario['name']}", f)
+    log(f"  [{idx:2d}/{len(SCENARIOS)}] {scenario['name']}", f)
     log(f"  Typ: {scenario['meeting_type']}  |  Userzy: {', '.join(result['users'])}", f)
     log(f"  Opis: {scenario['description']}", f)
     log(f"{'─'*70}", f)
@@ -279,7 +279,7 @@ def main():
 
             # Krótka pauza żeby nie trafić w rate limit (2/min na ciężkim endpoincie)
             if idx < len(SCENARIOS):
-                wait_time = 32  # bezpieczny margines przy limicie 2/min
+                wait_time = 15  # bezpieczny margines przy limicie 2/min
                 log(f"\n  ⏳ Czekam {wait_time}s przed kolejnym scenariuszem (rate limit)...", f)
                 time.sleep(wait_time)
 
