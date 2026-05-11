@@ -16,15 +16,15 @@ client = AsyncOpenAI(base_url="https://api.groq.com/openai/v1", api_key=os.geten
 class LlmExtraMovie(BaseModel):
     """Schemat extra filmów zwracanych przez LLM — tylko tytuł i gatunki."""
     movie_title: str
-    genres: list[str]
+    genres: list[str] = Field(default_factory=list)
 
 class LlmOutput(BaseModel):
     """Schemat odpowiedzi LLM — bez poster_path i release_date (LLM ich nie zna)."""
-    thought: str
+    thought: str = ""
     movie_title: str
     reasoning: str = Field(..., description="Description of reasoning in English")
     extra_movies: list[LlmExtraMovie] =  Field(..., description="EXACTLY TWO alternate movies", min_length= 2, max_length=2)
-    genres: list[str]
+    genres: list[str] = Field(default_factory=list)
 
 # ── Schematy odpowiedzi API (z danymi z bazy) ────────────────────────────────
 
