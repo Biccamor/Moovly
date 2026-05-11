@@ -1,4 +1,4 @@
-from ollama import AsyncClient
+
 from engine.prompts import AGENT_SYSTEM_PROMPT
 from engine.vector import hybrid_search, reranker
 from pydantic import BaseModel, Field
@@ -7,10 +7,10 @@ from datetime import date
 import os
 import time, random
 import logging
+from openai import AsyncOpenAI 
 
 logger = logging.getLogger(__name__)
-client = AsyncClient(host=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"))
-
+client = AsyncOpenAI(base_url="https://api.groq.com/openai/v1", api_key=os.getenv("GROQ_API_KEY"))
 # ── Schematy dla LLM (tylko to co model może znać) ──────────────────────────
 
 class LlmExtraMovie(BaseModel):
@@ -85,19 +85,19 @@ async def decide(session, query, runtime: int, llm_prompt: str, reranker_query: 
     Output:
     """
 
-    response = await client.chat(
-        model="qwen2.5:3b",
+    response = await client.chat.completions.create(
+        model="llama-3.1-8b-instant",
         messages=[
-            {'role': 'system', 
-             'content': AGENT_SYSTEM_PROMPT},
-            {'role': 'user', 
-             'content': user_prompt}
+            {"role": "system", "content": AGENT_SYSTEM_PROMPT},
+            {"role": "user",   "content": user_prompt},
         ],
-        options={"temperature": 0.25, "top_p": 0.9},
-        format=LlmOutput.model_json_schema()   # LLM dostaje schemat BEZ poster_path i release_date
+        temperature=0.25,
+        top_p=0.9,
+        response_format={"type": "json_object"},
     )
-    
-    llm_result = LlmOutput.model_validate_json(response.message.content)  # type: ignore
+
+    raw_content = response.choices[0].message.content or ""
+    llm_result = LlmOutput.model_validate_json(raw_content)
     t4 = time.perf_counter()
     logger.info(f"llm took {t4-t3}")
 
