@@ -18,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    
+    - uses: actions/checkout@v4
+
     - name: Create .env
       run: |
         touch .env 
@@ -31,7 +34,6 @@ jobs:
         echo TMDB_API="TESTYETESTTETE" >> .env
         echo GROQ_API_KEY="TESTETETET" >> .env
     
-    - uses: actions/checkout@v4
     - name: Docker Setup Compose
 
       uses: docker/setup-compose-action@v2.1.0
