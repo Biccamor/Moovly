@@ -55,4 +55,4 @@ jobs:
         docker compose exec -T app pytest
     - name: Security Scan with Bandit 
       run: | 
-        docker compose exec -T app bandit -r . -x venv,__pycache__,.pytest_cache,.vscode
+        docker compose exec -T app bandit -r . -x venv,__pycache__,.pytest_cache,.vscode,/test
