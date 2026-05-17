@@ -58,7 +58,7 @@ async def login_account(request: Request, data: Login, session = Depends(get_ses
         "message": f"User {data.email} logged in",
         "access_token": token["access_token"],
         "refresh_token": token["refresh_token"],
-        "token_type": "bearer",
+        "token_type": "bearer", #nosec
         "user_id": get_user.user_id,
     }
 

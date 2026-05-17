@@ -117,7 +117,7 @@ def get_rate_limit_key(request) -> str:
             user_id = payload.get("user_id")
             if user_id:
                 return str(user_id)
-        except Exception:
-            pass
+        except Exception as e:
+            logger.error(f"ERROR at get_rate_limit_key(): {e}")
     # fallback na IP dla publicznych endpointów
     return request.client.host if request.client else "unknown"

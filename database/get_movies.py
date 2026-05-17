@@ -72,7 +72,7 @@ def get_genres() -> dict[str, str]:
     Function to generate dict of genres that tmbd have based on url 
     """
     url_genres = "https://api.themoviedb.org/3/genre/movie/list?language=en"
-    response = requests.get(url_genres, headers=headers).json()["genres"]
+    response = requests.get(url_genres, headers=headers, timeout=30).json()["genres"]
     genres_dict = {}
     for genre in response:
         genres_dict.update({genre['id']:  genre['name']})
