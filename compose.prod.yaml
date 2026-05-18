@@ -1,0 +1,47 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17 # PostgreSQL with pgvector support
+    restart: unless-stopped
+    container_name: my-postgres
+    environment:
+      POSTGRES_USER: my_user
+      POSTGRES_PASSWORD: my_pwd
+      POSTGRES_DB: my_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+  app:
+    build:
+      context: .
+      cache_from:
+        - type=gha 
+      cache_to: 
+        - type=gha,mode=max
+    container_name: app
+    env_file:
+      - .env
+
+    environment:
+        HF_HUB_DOWNLOAD_TIMEOUT: 60
+        WATCHFILES_FORCE_POLLING: "true"
+    ports:
+      - "35.254.103.33:8010"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - hf_cache:/home/appuser/.cache/huggingface
+      - .:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8010 --reload
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  hf_cache:

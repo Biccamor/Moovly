@@ -1,0 +1,660 @@
+══════════════════════════════════════════════════════════════════════
+  movieNight — Wyniki scenariuszy testowych
+  Data:    2026-05-18 12:12:01
+  Backend: http://localhost:8010
+  Scenariuszy: 21
+══════════════════════════════════════════════════════════════════════
+
+======================================================================
+  REJESTRACJA I LOGOWANIE
+======================================================================
+  Email: scenario_runner_d2e3efac@test.pl
+  ✅ Rejestracja OK: {'message': 'Account created successfully', 'user_id': '8793e6ae-96e5-40f6-99dd-275ba28c2016'}
+  ✅ Login OK — user_id: 8793e6ae-96e5-40f6-99dd-275ba28c2016
+======================================================================
+
+
+──────────────────────────────────────────────────────────────────────
+  [ 1/21] solo_pizza_chill
+  Typ: SOLO  |  Userzy: Tomek
+  Opis: Jedna osoba, wieczór z pizzą, nic wymagającego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 0f037938-fe7a-4fbf-8a52-2274c1037b5a  (0.91s)
+  → POST /recommendation/0f037938-fe7a-4fbf-8a52-2274c1037b5a ...
+  ✅ Rekomendacja OK  (7.29s)
+
+  🎬 GŁÓWNY FILM: The Lego Movie
+     Gatunki:     Animation, Family, Adventure, Comedy, Fantasy
+     Ocena:       7.42
+     Runtime:     100 min
+     Data:        2014-02-06
+     Poster:      https://image.tmdb.org/t/p/w500/lbctonEnewCYZ4FYoTZhs8cidAl.jpg
+
+  💭 THOUGHT:
+     The group wants action, adventure, and comedy movies that are casual, crowd-pleasing, and easy to watch. The Lego Movie fits perfectly with its lighthearted and entertaining tone.
+
+  📝 REASONING:
+     The Lego Movie is a fun, lighthearted, and entertaining film that matches the group's preferences. It's a casual, crowd-pleasing movie that's easy to watch and perfect for a solo meeting.
+
+  🎥 ALTERNATYWY:
+     1. Free Guy  (Comedy, Adventure, Science Fiction)  ⭐7.453  🕐115min
+     2. Onward  (Family, Comedy, Adventure, Animation, Fantasy)  ⭐7.641  🕐102min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 2/21] solo_ambitious_cinephile
+  Typ: SOLO  |  Userzy: Marta
+  Opis: Samotny kinofile szukający czegoś wymagającego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 889bb6f8-842a-4cd6-be5a-fecf7defff07  (0.94s)
+  → POST /recommendation/889bb6f8-842a-4cd6-be5a-fecf7defff07 ...
+  ✅ Rekomendacja OK  (3.33s)
+
+  🎬 GŁÓWNY FILM: Mulholland Drive
+     Gatunki:     Thriller, Drama, Mystery
+     Ocena:       7.8
+     Runtime:     147 min
+     Data:        2001-06-06
+     Poster:      https://image.tmdb.org/t/p/w500/x7A59t6ySylr1L7aubOQEA480vM.jpg
+
+  💭 THOUGHT:
+     Marta's preferences are complex, but I found a few candidates that match her vibe. I chose Mulholland Drive for its arthouse, auteur, and cerebral qualities, as well as its complex timeline and unreliable narrator.
+
+  📝 REASONING:
+     Mulholland Drive is a critically acclaimed, mind-bending film with a complex plot and an unreliable narrator. Its arthouse and auteur qualities make it a great fit for Marta's preferences. Although it's not strictly a science fiction film, its surreal and dreamlike quality makes it a good match for her interests.
+
+  🎥 ALTERNATYWY:
+     1. Predestination  (Science Fiction, Thriller)  ⭐7.417  🕐98min
+     2. Gattaca  (Thriller, Science Fiction, Mystery, Romance)  ⭐7.566  🕐107min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 3/21] solo_horror_night
+  Typ: SOLO  |  Userzy: Kasia
+  Opis: Samotna sesja horrorowa — krótki film
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: e83931d1-c795-44a1-8de4-8b55514f64b3  (0.18s)
+  → POST /recommendation/e83931d1-c795-44a1-8de4-8b55514f64b3 ...
+  ✅ Rekomendacja OK  (2.62s)
+
+  🎬 GŁÓWNY FILM: Companion
+     Gatunki:     Horror, Science Fiction, Thriller
+     Ocena:       7.0
+     Runtime:     97 min
+     Data:        2025-01-22
+     Poster:      https://image.tmdb.org/t/p/w500/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg
+
+  💭 THOUGHT:
+     Kasia wants Horror movies with creepy and dark atmosphere, and elements like demon, ghost story, and jump scares. Companion fits her preferences with its android horror and complex, wonder, and dramatic elements.
+
+  📝 REASONING:
+     Companion is a horror movie with elements of science fiction and thriller, which fits Kasia's preferences. It has a complex and dramatic storyline, and its android horror theme matches her desire for creepy and dark atmosphere.
+
+  🎥 ALTERNATYWY:
+     1. Hush  (Horror, Thriller)  ⭐6.735  🕐82min
+     2. The Poughkeepsie Tapes  (Horror, Mystery, Crime, Thriller)  ⭐6.559  🕐81min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 4/21] solo_family_fun
+  Typ: SOLO  |  Userzy: Piotr
+  Opis: Wieczór z animacjami — Pixar, Disney, coś wholesome
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 80ea8296-daf3-4ab3-b04f-e93ba41bcb39  (0.38s)
+  → POST /recommendation/80ea8296-daf3-4ab3-b04f-e93ba41bcb39 ...
+  ✅ Rekomendacja OK  (7.86s)
+
+  🎬 GŁÓWNY FILM: Elio
+     Gatunki:     Family, Comedy, Adventure, Animation, Science Fiction
+     Ocena:       6.935
+     Runtime:     98 min
+     Data:        2025-06-18
+     Poster:      https://image.tmdb.org/t/p/w500/7z8jDiTZZco9moIKpTUImFtTy7o.jpg
+
+  💭 THOUGHT:
+     Group wants a mix of adventure, animation, comedy, and fantasy. Elio is the closest match with its epic space adventure and heartwarming themes.
+
+  📝 REASONING:
+     Elio is a heartwarming adventure that matches the group's preferences for animation, comedy, and fantasy. Although it's not as highly rated as other options, its unique blend of space adventure and coming-of-age themes makes it the closest fit.
+
+  🎥 ALTERNATYWY:
+     1. The Lego Movie  (Animation, Family, Adventure, Comedy, Fantasy)  ⭐7.42  🕐100min
+     2. Onward  (Family, Comedy, Adventure, Animation, Fantasy)  ⭐7.641  🕐102min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 5/21] solo_no_preferences
+  Typ: SOLO  |  Userzy: Ghost
+  Opis: User nie podał żadnych vibes — system powinien dać coś domyślnego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: af47c71e-1cf7-4e51-abf6-0e099c7e78ac  (1.12s)
+  → POST /recommendation/af47c71e-1cf7-4e51-abf6-0e099c7e78ac ...
+  ✅ Rekomendacja OK  (9.48s)
+
+  🎬 GŁÓWNY FILM: No One Will Save You
+     Gatunki:     Horror, Science Fiction
+     Ocena:       6.672
+     Runtime:     93 min
+     Data:        2023-09-21
+     Poster:      https://image.tmdb.org/t/p/w500/ehGIDAMaYy6Eg0o8ga0oqflDjqW.jpg
+
+  💭 THOUGHT:
+     Ghost wants all kinds of movies, so I've chosen a film that's a mix of genres and has a unique premise.
+
+  📝 REASONING:
+     No One Will Save You is a sci-fi horror film that fits Ghost's desire for a wide range of movies. It's a tense, isolated story about a woman battling extraterrestrials, which should appeal to Ghost's interest in horror and sci-fi.
+
+  🎥 ALTERNATYWY:
+     1. Spaceman  (Science Fiction, Adventure, Drama)  ⭐6.707  🕐108min
+     2. Solo Leveling -ReAwakening-  (Action, Adventure, Fantasy, Animation)  ⭐7.1  🕐116min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 6/21] date_both_romantic
+  Typ: RANDKA  |  Userzy: Anna, Michał
+  Opis: Oboje chcą romantycznego wieczoru — harmonia
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 5aa3791a-8d27-40e8-b286-088bdb2c0df0  (0.51s)
+  → POST /recommendation/5aa3791a-8d27-40e8-b286-088bdb2c0df0 ...
+  ✅ Rekomendacja OK  (11.58s)
+
+  🎬 GŁÓWNY FILM: Elemental
+     Gatunki:     Family, Fantasy, Comedy, Romance, Animation
+     Ocena:       7.577
+     Runtime:     102 min
+     Data:        2023-06-14
+     Poster:      https://image.tmdb.org/t/p/w500/4Y1WNkd88JXmGfhtWR7dmDAo1T2.jpg
+
+  💭 THOUGHT:
+     Both users want romantic and emotional movies, but Michał also wants comedy and adventure. Elemental fits the bill with its romantic and whimsical tone, and Michał's love for comedy and adventure.
+
+  📝 REASONING:
+     Elemental is a romantic and whimsical film that fits both users' preferences for emotional and romantic movies. Michał will enjoy the comedic and adventurous elements, while Anna will appreciate the heartwarming and tearjerker aspects.
+
+  🎥 ALTERNATYWY:
+     1. Four Weddings and a Funeral  (Comedy, Drama, Romance)  ⭐6.773  🕐117min
+     2. Crazy, Stupid, Love.  (Comedy, Drama, Romance)  ⭐7.27  🕐118min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 7/21] date_romance_vs_action
+  Typ: RANDKA  |  Userzy: Ola, Bartek
+  Opis: Ona chce romcom, on chce adrenaliny — KONFLIKT
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: b9f1545a-e4b5-44a1-a7ba-21a99065cf9f  (0.55s)
+  → POST /recommendation/b9f1545a-e4b5-44a1-a7ba-21a99065cf9f ...
+  ✅ Rekomendacja OK  (15.37s)
+
+  🎬 GŁÓWNY FILM: Labor Day
+     Gatunki:     Drama, Romance, Thriller
+     Ocena:       7.031
+     Runtime:     111 min
+     Data:        2013-12-27
+     Poster:      https://image.tmdb.org/t/p/w500/iQdbCtk1Q3TdZRBKSLU1Vh870l7.jpg
+
+  💭 THOUGHT:
+     The group wants a romantic comedy with a bittersweet tone, which matches the vibe of 'Labor Day'.
+
+  📝 REASONING:
+     Labor Day is a romantic drama with elements of a love story, which fits the group's preferences for a romantic movie. Although it's not strictly a comedy, it has a bittersweet tone that matches the group's vibe.
+
+  🎥 ALTERNATYWY:
+     1. The Drama  (Romance, Comedy, Drama)  ⭐6.3  🕐105min
+     2. Even If This Love Disappears Tonight  (Romance, Drama)  ⭐8.343  🕐106min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 8/21] date_guilty_pleasure_harmony
+  Typ: RANDKA  |  Userzy: Zuzia, Dawid
+  Opis: Oboje lubią 'cringe' kino — idealna para
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 329b69d2-9b7f-49d2-93b4-13956dfded0b  (0.49s)
+  → POST /recommendation/329b69d2-9b7f-49d2-93b4-13956dfded0b ...
+  ✅ Rekomendacja OK  (16.87s)
+
+  🎬 GŁÓWNY FILM: The Lego Movie
+     Gatunki:     Animation, Family, Adventure, Comedy, Fantasy
+     Ocena:       7.42
+     Runtime:     100 min
+     Data:        2014-02-06
+     Poster:      https://image.tmdb.org/t/p/w500/lbctonEnewCYZ4FYoTZhs8cidAl.jpg
+
+  💭 THOUGHT:
+     Both users want a mix of Action, Adventure, Comedy, and Romance with elements of absurd humor, binge-worthy, campy, and so on. I've chosen a movie that fits their preferences and is a cult classic.
+
+  📝 REASONING:
+     The Lego Movie is a cult classic that fits both users' preferences for Action, Adventure, Comedy, and Romance. It has elements of absurd humor, binge-worthy, campy, and so on, making it a great fit for their meeting type.
+
+  🎥 ALTERNATYWY:
+     1. High School Musical  (Comedy, Drama, Family, Music, Romance, TV Movie)  ⭐6.5  🕐98min
+     2. KPop Demon Hunters  (Fantasy, Music, Comedy, Animation)  ⭐8.032  🕐96min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [ 9/21] date_horror_romance_mix
+  Typ: RANDKA  |  Userzy: Igor, Lena
+  Opis: On chce horroru, ona romansu — system musi znaleźć kompromis
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 512d102b-0b55-4d46-a2a3-b62319250fc8  (0.48s)
+  → POST /recommendation/512d102b-0b55-4d46-a2a3-b62319250fc8 ...
+  ✅ Rekomendacja OK  (17.75s)
+
+  🎬 GŁÓWNY FILM: The Sixth Sense
+     Gatunki:     Mystery, Thriller, Drama
+     Ocena:       7.948
+     Runtime:     107 min
+     Data:        1999-08-06
+     Poster:      https://image.tmdb.org/t/p/w500/vOyfUXNFSnaTk7Vk5AjpsKTUWsu.jpg
+
+  💭 THOUGHT:
+     Group wants Horror and Mystery movies with creepy atmosphere, Lena wants Drama and Romance movies with emotional elements. I picked The Sixth Sense as it has elements of Mystery, Thriller, and Drama, and a creepy atmosphere.
+
+  📝 REASONING:
+     The Sixth Sense is a classic Mystery-Thriller with a creepy atmosphere, fitting Igor's preferences. It also has elements of Drama, which aligns with Lena's preferences for emotional movies. Although it's not a Horror movie, it has a supernatural twist that might appeal to Igor.
+
+  🎥 ALTERNATYWY:
+     1. Together  (Horror, Romance)  ⭐7.0  🕐102min
+     2. The Sadness  (Horror, Thriller)  ⭐6.814  🕐100min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [10/21] crew_5_horror_romance_extremal_conflict
+  Typ: EKIPA  |  Userzy: Horror 1, Horror 2, Horror 3, Horror 4, Thriller
+  Opis: 5 osób — 2 horror fanów, 2 romantyków, 1 thriller fan — skrajny konflikt
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: c5c68506-55a7-42d3-abfe-b9a8cd83cf96  (1.02s)
+  → POST /recommendation/c5c68506-55a7-42d3-abfe-b9a8cd83cf96 ...
+  ✅ Rekomendacja OK  (18.67s)
+
+  🎬 GŁÓWNY FILM: Se7en
+     Gatunki:     Crime, Mystery, Thriller
+     Ocena:       8.379
+     Runtime:     127 min
+     Data:        1995-09-22
+     Poster:      https://image.tmdb.org/t/p/w500/191nKfP0ehp3uIvWqgPbFmI4lv9.jpg
+
+  💭 THOUGHT:
+     Group preferences are a mix of horror and thriller elements, with a focus on complex plots and dark atmospheres. The closest match is a movie that combines horror and thriller elements with a complex plot.
+
+  📝 REASONING:
+     Se7en is a dark and haunting film that combines elements of horror and thriller genres, with a complex plot that explores the 'seven deadly sins'. It matches the group's preferences for a mix of horror and thriller elements, with a focus on complex plots and dark atmospheres.
+
+  🎥 ALTERNATYWY:
+     1. The Others  (Horror, Mystery, Thriller)  ⭐7.617  🕐101min
+     2. Crimson Peak  (Horror, Mystery, Romance)  ⭐6.661  🕐119min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [11/21] crew_2_identical_vibes
+  Typ: EKIPA  |  Userzy: Kamil, Łukasz
+  Opis: Dwóch kumpli — obaj chcą tego samego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: b6e0b311-a60d-4a99-a6a5-8d6428a2d9c9  (0.45s)
+  → POST /recommendation/b6e0b311-a60d-4a99-a6a5-8d6428a2d9c9 ...
+  ✅ Rekomendacja OK  (14.06s)
+
+  🎬 GŁÓWNY FILM: The Man from Nowhere
+     Gatunki:     Action, Thriller, Crime
+     Ocena:       7.692
+     Runtime:     119 min
+     Data:        2010-08-04
+     Poster:      https://image.tmdb.org/t/p/w500/ld19CFIo27t41JXSGZdaPMUGTxh.jpg
+
+  💭 THOUGHT:
+     Both users want action-packed movies with a casual and entertaining vibe. The Man from Nowhere fits perfectly with its mix of action, martial arts, and a feel-good tone.
+
+  📝 REASONING:
+     The Man from Nowhere is a high-energy action film with a strong focus on martial arts and a heroic protagonist. Its lighthearted and entertaining tone makes it an ideal choice for both users, who are looking for a casual and fun movie experience.
+
+  🎥 ALTERNATYWY:
+     1. Kung Fu Hustle  (Action, Comedy, Crime, Fantasy)  ⭐7.486  🕐99min
+     2. Police Story  (Action, Crime, Comedy)  ⭐7.522  🕐100min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [12/21] crew_3_diverse_conflict
+  Typ: EKIPA  |  Userzy: Adam, Ewa, Marek
+  Opis: Trzy totalnie różne osoby — horror, romcom, sci-fi
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: d353e59e-1c6f-4993-a6f8-c56b08a0e4b9  (0.54s)
+  → POST /recommendation/d353e59e-1c6f-4993-a6f8-c56b08a0e4b9 ...
+  ✅ Rekomendacja OK  (17.3s)
+
+  🎬 GŁÓWNY FILM: The Others
+     Gatunki:     Horror, Mystery, Thriller
+     Ocena:       7.617
+     Runtime:     101 min
+     Data:        2001-08-02
+     Poster:      https://image.tmdb.org/t/p/w500/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg
+
+  💭 THOUGHT:
+     EKIPA meeting with diverse preferences. Adam wants horror, Ewa romance, and Marek epic fantasy. The Others fits Adam's horror preferences, while Crimson Peak has a romantic element. Chainsaw Man - The Movie: Reze Arc has a complex, epic storyline.
+
+  📝 REASONING:
+     The Others is a classic horror film with a dark atmosphere, which fits Adam's preferences. It also has elements of mystery and thriller, making it a good fit for the EKIPA meeting.
+
+  🎥 ALTERNATYWY:
+     1. Crimson Peak  (Horror, Mystery, Romance)  ⭐6.661  🕐119min
+     2. Chainsaw Man - The Movie: Reze Arc  (Animation, Action, Romance, Fantasy)  ⭐8.33  🕐99min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [13/21] crew_4_all_chill
+  Typ: EKIPA  |  Userzy: Szymon, Filip, Kuba, Daniel
+  Opis: Czterech ziomków, pizza, piwo, coś lekkiego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: c66d6d60-8184-4d4f-a173-80c7210a7852  (0.44s)
+  → POST /recommendation/c66d6d60-8184-4d4f-a173-80c7210a7852 ...
+  ✅ Rekomendacja OK  (17.84s)
+
+  🎬 GŁÓWNY FILM: Puss in Boots
+     Gatunki:     Animation, Family, Fantasy, Adventure, Comedy
+     Ocena:       6.595
+     Runtime:     90 min
+     Data:        2011-10-27
+     Poster:      https://image.tmdb.org/t/p/w500/n4UkIqNYSTr4DPoHCVfLrL8mbre.jpg
+
+  💭 THOUGHT:
+     All candidates match the group's preferences for a fun, lighthearted movie. I've chosen the highest rated option, Puss in Boots, which fits the group's preferences for a casual, crowd-pleaser, easy to watch, entertaining, feel-good, fun, lighthearted, no stress, popcorn movie, and relaxing.
+
+  📝 REASONING:
+     Puss in Boots is a fun, lighthearted adventure-comedy that matches the group's preferences for a casual, crowd-pleaser, easy to watch, entertaining, feel-good, fun, lighthearted, no stress, popcorn movie, and relaxing. Its blend of humor, action, and heart makes it a great fit for the group.
+
+  🎥 ALTERNATYWY:
+     1. Abominable  (Family, Animation, Adventure, Comedy, Fantasy)  ⭐7.45  🕐97min
+     2. Moana  (Adventure, Comedy, Family, Animation)  ⭐7.564  🕐107min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [14/21] crew_5_action_dominant
+  Typ: EKIPA  |  Userzy: Wojtek, Paweł, Tomasz, Jakub, Robert
+  Opis: 5 osób, większość chce akcję, jeden outlier
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 8951fefc-0128-402d-99f8-25e1681e9f72  (0.77s)
+  → POST /recommendation/8951fefc-0128-402d-99f8-25e1681e9f72 ...
+  ✅ Rekomendacja OK  (17.51s)
+
+  🎬 GŁÓWNY FILM: The Man from Nowhere
+     Gatunki:     Action, Thriller, Crime
+     Ocena:       7.692
+     Runtime:     119 min
+     Data:        2010-08-04
+     Poster:      https://image.tmdb.org/t/p/w500/ld19CFIo27t41JXSGZdaPMUGTxh.jpg
+
+  💭 THOUGHT:
+     The group's preferences suggest a high-energy, action-packed movie with elements of combat, martial arts, and intense survival. Among the candidates, The Man from Nowhere and Shinjuku Incident stand out for their focus on martial arts and intense action sequences.
+
+  📝 REASONING:
+     The Man from Nowhere is a high-octane action film with a strong focus on martial arts and intense combat sequences. The movie's protagonist, a reclusive pawnshop owner, goes on a brutal rampage to rescue a young girl kidnapped by a criminal organization, fitting the group's preferences for a fast-paced, action-packed movie.
+
+  🎥 ALTERNATYWY:
+     1. Shinjuku Incident  (Drama, Action, Thriller, Crime)  ⭐6.677  🕐119min
+     2. Kill  (Action, Crime, Thriller, Drama)  ⭐7.121  🕐105min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [15/21] crew_3_runtime_extremes
+  Typ: EKIPA  |  Userzy: Ania, Basia, Celina
+  Opis: Jeden chce krótki film, drugi długi — test kalkulacji runtime
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 65ce335b-b31d-48d3-b638-816b72db78b8  (0.23s)
+  → POST /recommendation/65ce335b-b31d-48d3-b638-816b72db78b8 ...
+  ✅ Rekomendacja OK  (10.77s)
+
+  🎬 GŁÓWNY FILM: The Lion King 1½
+     Gatunki:     Family, Animation, Comedy, Adventure
+     Ocena:       6.578
+     Runtime:     77 min
+     Data:        2004-10-28
+     Poster:      https://image.tmdb.org/t/p/w500/u2hN0WT7Dz46HfhQbr6uzSYfVW4.jpg
+
+  💭 THOUGHT:
+     All three users want Action, Adventure, Comedy movies with a casual and feel-good vibe. The closest match is The Lion King 1½, which is a family-friendly comedy-adventure with a lighthearted tone.
+
+  📝 REASONING:
+     The Lion King 1½ is a fun and entertaining movie that fits the group's preferences for a casual, crowd-pleasing film. It's easy to watch and has a relaxing atmosphere, making it perfect for a group movie night.
+
+  🎥 ALTERNATYWY:
+     1. We Bare Bears: The Movie  (Animation, Adventure, Family, Comedy, TV Movie)  ⭐7.8  🕐69min
+     2. Pokémon the Movie: Hoopa and the Clash of Ages  (Family, Adventure, Animation, Action, Fantasy)  ⭐6.8  🕐73min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [16/21] crew_3_one_empty_prefs
+  Typ: EKIPA  |  Userzy: Jan, Piotr, Karol
+  Opis: Jeden user nie podał vibes — system musi sobie poradzić
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 8ea14e51-6161-49a7-b469-052416870c82  (0.67s)
+  → POST /recommendation/8ea14e51-6161-49a7-b469-052416870c82 ...
+  ✅ Rekomendacja OK  (15.98s)
+
+  🎬 GŁÓWNY FILM: Battle Royale
+     Gatunki:     Drama, Thriller, Action
+     Ocena:       7.27
+     Runtime:     113 min
+     Data:        2000-12-16
+     Poster:      https://image.tmdb.org/t/p/w500/aLGKAQKgzWpJ6egyWzzC11jXBRJ.jpg
+
+  💭 THOUGHT:
+     Karol's preferences are closest to the group's vibe, with a focus on action and suspense.
+
+  📝 REASONING:
+     Battle Royale matches Karol's preferences for action and suspense, with a high-stakes plot and intense survival elements. Although it's a dystopian drama, it has a fast-paced and thrilling narrative that should appeal to the group.
+
+  🎥 ALTERNATYWY:
+     1. Oldboy  (Drama, Thriller, Mystery, Action)  ⭐8.239  🕐120min
+     2. Law Abiding Citizen  (Drama, Crime, Thriller)  ⭐7.386  🕐109min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [17/21] family_safe_choice
+  Typ: RODZINA  |  Userzy: Mama, Tata, Dziecko
+  Opis: Mama, tata, dziecko — nic strasznego, nic ambitnego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: cf5e331c-5555-453f-adba-81ded448db3b  (0.63s)
+  → POST /recommendation/cf5e331c-5555-453f-adba-81ded448db3b ...
+  ✅ Rekomendacja OK  (17.23s)
+
+  🎬 GŁÓWNY FILM: The Super Mario Galaxy Movie
+     Gatunki:     Family, Fantasy, Comedy, Adventure, Animation
+     Ocena:       8.0
+     Runtime:     98 min
+     Data:        2026-04-01
+     Poster:      https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg
+
+  💭 THOUGHT:
+     The group wants a mix of action, adventure, comedy, and family-friendly elements. The Super Mario Galaxy Movie fits well with its animated, cartoon, and lighthearted tone, making it a great choice for a family movie night.
+
+  📝 REASONING:
+     The Super Mario Galaxy Movie is a fun, animated film that matches the group's preferences for a lighthearted, family-friendly movie. Its colorful and whimsical world, combined with its slapstick humor, make it an excellent choice for a casual movie night.
+
+  🎥 ALTERNATYWY:
+     1. Onward  (Family, Comedy, Adventure, Animation, Fantasy)  ⭐7.641  🕐102min
+     2. The Croods: A New Age  (Animation, Family, Adventure, Fantasy, Comedy)  ⭐7.446  🕐95min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [18/21] family_teen_vs_parents
+  Typ: RODZINA  |  Userzy: Mama, Tata, Syn, Córka
+  Opis: Konflikt pokoleniowy — młodzi chcą horroru, starsi komedii
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 04bf3e6c-7d64-4616-a98c-18c1860c58b6  (0.9s)
+  → POST /recommendation/04bf3e6c-7d64-4616-a98c-18c1860c58b6 ...
+  ✅ Rekomendacja OK  (18.33s)
+
+  🎬 GŁÓWNY FILM: Nimona
+     Gatunki:     Animation, Family, Action, Adventure, Fantasy, Comedy
+     Ocena:       7.9
+     Runtime:     99 min
+     Data:        2023-06-23
+     Poster:      https://image.tmdb.org/t/p/w500/2NQljeavtfl22207D1kxLpa4LS3.jpg
+
+  💭 THOUGHT:
+     The group's preferences lean towards light-hearted and adventurous movies, so I've chosen a film that fits the bill.
+
+  📝 REASONING:
+     Nimona is a charming and funny animated film that features a unique blend of action, adventure, and fantasy elements. Its lighthearted tone and witty dialogue make it a great fit for the group's preferences.
+
+  🎥 ALTERNATYWY:
+     1. Beetlejuice  (Fantasy, Comedy)  ⭐7.368  🕐92min
+     2. Universal  (Comedy, Drama, Science Fiction)  ⭐10.0  🕐90min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [19/21] family_fun_harmony
+  Typ: RODZINA  |  Userzy: Babcia, Dziadek, Mama, Tata, Wnuk
+  Opis: Cała rodzina — coś dla każdego, animacje i komedie familijne
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 16337f05-3df3-490b-8496-1b2a39075c27  (3.46s)
+  → POST /recommendation/16337f05-3df3-490b-8496-1b2a39075c27 ...
+  ✅ Rekomendacja OK  (11.47s)
+
+  🎬 GŁÓWNY FILM: Inside Out
+     Gatunki:     Animation, Family, Adventure, Drama, Comedy
+     Ocena:       7.9
+     Runtime:     95 min
+     Data:        2015-06-17
+     Poster:      https://image.tmdb.org/t/p/w500/2H1TmgdfNtsKlU9jKdeNyYL5y8T.jpg
+
+  💭 THOUGHT:
+     All users want animation, so I picked the highest rated animation movie that fits the group's preferences.
+
+  📝 REASONING:
+     Inside Out is a highly rated animation movie that fits the group's preferences for animation, family, and adventure. It also has elements of drama and comedy, which are preferred by some users. The movie's themes of overcoming adversity and perseverance are also in line with the group's preferences.
+
+  🎥 ALTERNATYWY:
+     1. Luca  (Animation, Comedy, Fantasy, Family, Drama)  ⭐7.783  🕐95min
+     2. Encanto  (Animation, Comedy, Family, Fantasy)  ⭐7.6  🕐102min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [20/21] maximum_conflict
+  Typ: EKIPA  |  Userzy: X, Y, Z
+  Opis: 3 osoby, każdy chce czegoś innego i blokuje to co inni lubią
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 4acfbde6-8084-4d0d-996c-562646180e7d  (1.14s)
+  → POST /recommendation/4acfbde6-8084-4d0d-996c-562646180e7d ...
+  ✅ Rekomendacja OK  (16.94s)
+
+  🎬 GŁÓWNY FILM: The Myth
+     Gatunki:     Action, Adventure, Comedy, Drama, Fantasy
+     Ocena:       6.415
+     Runtime:     118 min
+     Data:        2005-05-11
+     Poster:      https://image.tmdb.org/t/p/w500/iBDFnLkTZZxQlbb6IIeYkufnPCY.jpg
+
+  💭 THOUGHT:
+     Group EKIPA has diverse preferences, but I'll focus on Drama, Horror, and Mystery to cater to user X's tastes. The Myth has a complex plot and dark atmosphere, making it a suitable choice.
+
+  📝 REASONING:
+     The Myth is a complex, dark, and thought-provoking film that fits user X's preferences for arthouse, cerebral, and critically acclaimed movies. Although it has comedic elements, its overall tone is more dramatic, making it a good fit for the group.
+
+  🎥 ALTERNATYWY:
+     1. Oldboy  (Drama, Thriller, Mystery, Action)  ⭐8.239  🕐120min
+     2. A Tale of Two Sisters  (Drama, Horror, Mystery)  ⭐7.103  🕐115min
+
+  ⏳ Czekam 15s przed kolejnym scenariuszem (rate limit)...
+
+──────────────────────────────────────────────────────────────────────
+  [21/21] solo_all_vibes
+  Typ: SOLO  |  Userzy: MaxVibes
+  Opis: User zaznaczył wszystkie viby — system musi wybrać coś wszechstronnego
+──────────────────────────────────────────────────────────────────────
+  → POST /recommendation/session ...
+  ✅ Sesja zapisana: 76a45397-aa69-4b89-bd9a-5d9009d4ee49  (2.18s)
+  → POST /recommendation/76a45397-aa69-4b89-bd9a-5d9009d4ee49 ...
+  ✅ Rekomendacja OK  (21.1s)
+
+  🎬 GŁÓWNY FILM: The Lego Movie
+     Gatunki:     Animation, Family, Adventure, Comedy, Fantasy
+     Ocena:       7.42
+     Runtime:     100 min
+     Data:        2014-02-06
+     Poster:      https://image.tmdb.org/t/p/w500/lbctonEnewCYZ4FYoTZhs8cidAl.jpg
+
+  💭 THOUGHT:
+     Group wants action, adventure, and animation. Solo Mio is the closest match with a relaxed and romantic vibe, but it doesn't fit perfectly. Edward Scissorhands has fantasy and drama elements, but it's not primarily an action or adventure film. Everything Everywhere All at Once has action and adventure elements, but it's primarily a science fiction film. The Lego Movie has action, adventure, and animation, making it the closest match to the group's preferences.
+
+  📝 REASONING:
+     The Lego Movie is a fun, action-packed, and adventurous film that fits the group's preferences. Although it's not a traditional action film, it has a lot of exciting sequences and a lighthearted tone that should appeal to the group.
+
+  🎥 ALTERNATYWY:
+     1. Everything Everywhere All at Once  (Action, Adventure, Science Fiction)  ⭐7.722  🕐140min
+     2. Solo Mio  (Romance, Comedy)  ⭐7.1  🕐96min
+
+
+══════════════════════════════════════════════════════════════════════
+  PODSUMOWANIE
+══════════════════════════════════════════════════════════════════════
+  ✅ Udane:    21/20
+  ❌ Błędy:    0/20
+  ⏱️  Czas:     607.4s  (średnio 28.9s/scenariusz)
+
+  Nr   Scenariusz                          Film                           Czas     Status
+  ──── ─────────────────────────────────── ────────────────────────────── ──────── ──────
+  1    solo_pizza_chill                    The Lego Movie                 7.3s     ✅
+  2    solo_ambitious_cinephile            Mulholland Drive               3.3s     ✅
+  3    solo_horror_night                   Companion                      2.6s     ✅
+  4    solo_family_fun                     Elio                           7.9s     ✅
+  5    solo_no_preferences                 No One Will Save You           9.5s     ✅
+  6    date_both_romantic                  Elemental                      11.6s    ✅
+  7    date_romance_vs_action              Labor Day                      15.4s    ✅
+  8    date_guilty_pleasure_harmony        The Lego Movie                 16.9s    ✅
+  9    date_horror_romance_mix             The Sixth Sense                17.8s    ✅
+  10   crew_5_horror_romance_extremal_conflict Se7en                          18.7s    ✅
+  11   crew_2_identical_vibes              The Man from Nowhere           14.1s    ✅
+  12   crew_3_diverse_conflict             The Others                     17.3s    ✅
+  13   crew_4_all_chill                    Puss in Boots                  17.8s    ✅
+  14   crew_5_action_dominant              The Man from Nowhere           17.5s    ✅
+  15   crew_3_runtime_extremes             The Lion King 1½               10.8s    ✅
+  16   crew_3_one_empty_prefs              Battle Royale                  16.0s    ✅
+  17   family_safe_choice                  The Super Mario Galaxy Movie   17.2s    ✅
+  18   family_teen_vs_parents              Nimona                         18.3s    ✅
+  19   family_fun_harmony                  Inside Out                     11.5s    ✅
+  20   maximum_conflict                    The Myth                       16.9s    ✅
+  21   solo_all_vibes                      The Lego Movie                 21.1s    ✅
+
+══════════════════════════════════════════════════════════════════════
+  Wyniki zapisane do: C:\Users\fabia\projects\movieNight\scripts\results_20260518_121201.txt
+══════════════════════════════════════════════════════════════════════
+
+  Surowe dane JSON: C:\Users\fabia\projects\movieNight\scripts\results_20260518_121201.json

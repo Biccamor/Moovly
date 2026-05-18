@@ -42,11 +42,11 @@ Output: {"thought": "No candidate matches a fun party vibe — all are serious w
 
 VIBE_MAP = {
     "AMBITIOUS": {
-        "genres": {"Drama": 2.0, "Mystery": 1.0, "Thriller": 1.0},
+        "genres": {"Drama": 2.0, "Mystery": 1.0, "Thriller": 1.5},
         "keywords": "arthouse, intellectual, thought-provoking, complex plot, slow-burn, philosophical, masterpiece, auteur, cerebral, unconventional narrative, critically acclaimed"
     },
     "PIZZA_CHILL": {
-        "genres": {"Comedy": 2.0, "Adventure": 1.0, "Action": 1.0},
+        "genres": {"Comedy": 2.0, "Adventure": 1.0, "Action": 1.5},
         "keywords": "lighthearted, easy to watch, fun, casual, entertaining, feel-good, popcorn movie, no stress, relaxing, crowd-pleaser"
     },
     "MIND_BENDER": {
@@ -58,7 +58,7 @@ VIBE_MAP = {
         "keywords": "fast-paced, chases, explosions, high stakes, intense survival, martial arts, shootout, heist, non-stop action, combat"
     },
     "DATE_NIGHT": {
-        "genres": {"Romance": 2.0, "Comedy": 1.2, "Drama": 1.0},
+        "genres": {"Romance": 2.5, "Comedy": 1.2, "Drama": 1.0},
         "keywords": "romantic, chemistry, love story, charming, relationship, sweet, romantic comedy, heartwarming, couple, falling in love"
     },
     "DEEP_FEELS": {
@@ -70,7 +70,7 @@ VIBE_MAP = {
         "keywords": "hilarious, laugh out loud, slapstick, funny, satire, spoof, absurd humor, witty dialogue, parody, buddy comedy"
     },
     "SPINE_CHILLING": {
-        "genres": {"Horror": 3.0, "Mystery": 1.0, "Thriller": 1.5},
+        "genres": {"Horror": 3.5, "Mystery": 1.0, "Thriller": 1.5},
         "keywords": "terrifying, dark atmosphere, jump scares, scary, sinister, macabre, supernatural, ghost story, demon, slasher, haunted, creepy, disturbing"
     },
     "FAMILY_FUN": {
@@ -78,15 +78,15 @@ VIBE_MAP = {
         "keywords": "animated, pixar, dreamworks, disney, wholesome, colorful, kids and adults, heartwarming adventure, talking animals, magical world, cartoon, studio ghibli, family friendly"
     },
     "INSPIRING": {
-        "genres": {"Drama": 1.5, "History": 1.5, "Biography": 1.0},
+        "genres": {"Drama": 1.5, "History": 1.4, "Biography": 1.0},
         "keywords": "uplifting, motivational, overcoming adversity, true story, triumph, hope, underdog, against all odds, perseverance, real events, biographical"
     },
     "EPIC_JOURNEY": {
-        "genres": {"Adventure": 2.0, "Fantasy": 1.5, "Science Fiction": 1.0},
+        "genres": {"Adventure": 2.0, "Fantasy": 1.5, "Science Fiction": 1.5},
         "keywords": "grand scale, quest, world-building, epic, hero's journey, mythology, chosen one, vast landscape, fellowship, saga, legendary"
     },
     "GUILTY_PLEASURE": {
-        "genres": {"Comedy": 1.5, "Action": 1.0, "Romance": 1.2},
+        "genres": {"Comedy": 1.5, "Action": 1.3, "Romance": 1.2},
         "keywords": "cheesy, campy, over-the-top, so bad it's good, predictable but fun, cult classic, teen drama, guilty watch, trashy fun, binge-worthy"
     },
 }
