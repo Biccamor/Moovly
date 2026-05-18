@@ -12,10 +12,10 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-DATABASE_URL_LOCAL = os.getenv("DATABASE_URL_LOCAL")
+DATABASE_URL = os.getenv("DATABASE_URL")
 BEARER_TOKEN = os.getenv("BEARER_TOKEN")
 TMDB_API = os.getenv("TMDB_API")
-engine = create_engine(DATABASE_URL_LOCAL, #type: ignore
+engine = create_engine(DATABASE_URL, #type: ignore
                         echo=True,
                         pool_size=20,          
                         max_overflow=10,      
