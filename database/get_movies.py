@@ -129,7 +129,8 @@ def add_movies(start_page: int = 1):
             if not page_prompts:
                 continue
 
-            embeddings = create_vector(page_prompts)
+            import asyncio
+            embeddings = asyncio.run(create_vector(page_prompts))
 
             for data, embedding in zip(page_movies_data, embeddings):
                 m = data["movie"]
