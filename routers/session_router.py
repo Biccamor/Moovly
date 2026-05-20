@@ -262,7 +262,7 @@ async def set_member_preferences(
     }
 
 
-@router.get("/my", summary="Pobierz otwarte sesje użytkownika", response_model=list[SessionResponse])
+@router.get("/user/sessions", summary="Pobierz otwarte sesje użytkownika", response_model=list[SessionResponse])
 @limiter.limit("30/minute")
 async def get_my_open_sessions(
     request: Request,
