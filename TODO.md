@@ -1,5 +1,9 @@
 # movieNight — TODO
 
+
+
+NAPRAW TMDB POSTER PATH NA SERWERZE
+
 ## 🟢 Przyszłość
 
 - [ ] **Rating endpoint** — model `Rating` istnieje w DB ale brak routera
