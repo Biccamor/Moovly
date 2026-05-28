@@ -66,8 +66,8 @@ def _build_session_response(movie_session: MovieSessionDB) -> SessionResponse:
                     preferences=Preferences(**m["preferences"]) if m.get("preferences") else None,
                 )
             )
-        except Exception:
-            pass
+        except Exception as e:
+            logger.error(f"Error {e}")
     return SessionResponse(
         session_id=movie_session.session_id,
         host_id=movie_session.host_id,
