@@ -71,5 +71,5 @@ TERMS AND CONDITIONS
 
 ───────────────────────────────────────────────────────────────────────────────
 
-© 2024 Fabian — All Rights Reserved.
+© 2026 Fabian Bicca — All Rights Reserved.
 Source available. Commercial use strictly prohibited without permission.
