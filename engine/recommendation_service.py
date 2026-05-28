@@ -75,6 +75,7 @@ class RecomService:
                 kw_list = [k.strip() for k in vibe_info["keywords"].split(",")]
                 for genre, weight in vibe_info["genres"].items():
                     user_genres[genre] = user_genres.get(genre, 0.0) + weight
+                    user_kw.setdefault(genre, set()).update(kw_list)
 
          # normalizuj wektor usera do długości 1 żeby każdy user miał równy głos
             norm = np.sqrt(sum(v ** 2 for v in user_genres.values())) if user_genres else 0
