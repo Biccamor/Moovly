@@ -67,24 +67,31 @@ class RecomService:
     def _create_user_prompts(self) -> list[tuple[str, float]]:
         genre_data = {}
         for user in self.user_list: 
+            user_genres = {}
+            user_kw = {}
             for vibe in user.personal_vibe.vibes:
                 vibe_info = VIBE_MAP.get(vibe)
                 if not vibe_info: continue
-                
+                kw_list = [k.strip() for k in vibe_info["keywords"].split(",")]
                 for genre, weight in vibe_info["genres"].items():
-                    if genre not in genre_data:
-                        genre_data[genre] = {"count": 0, "keywords": set()}
-                    genre_data[genre]["count"] += weight
-                    
-                    kw_list = [k.strip() for k in vibe_info["keywords"].split(",")]
-                    genre_data[genre]["keywords"].update(kw_list)
+                    user_genres[genre] = user_genres.get(genre, 0.0) + weight
+
+         # normalizuj wektor usera do długości 1 żeby każdy user miał równy głos
+            norm = np.sqrt(sum(v ** 2 for v in user_genres.values())) if user_genres else 0
+            if norm == 0: continue
+
+            for genre, weight in user_genres.items():
+                if genre not in genre_data:
+                    genre_data[genre] = {"count": 0, "keywords": set()}
+                genre_data[genre]["count"] += weight / norm
+                genre_data[genre]["keywords"].update(user_kw.get(genre, set()))
 
         result = []
         for genre, data in genre_data.items():
             keywords_str = ", ".join(sorted(data["keywords"]))
             prompt = f"A {self.meeting_type} movie in the {genre} genre, featuring: {keywords_str}. It has a plot focusing on these elements."
             result.append((prompt, float(data["count"])))
-            
+
         return result
     
     def _create_prompt(self, conflict: bool) -> str:
